@@ -1,0 +1,4 @@
+mode,exact_match,namespace_hit_rate,avg_query_latency_ms
+global_search,1.0,1.0,2.0184
+keyword_routed,1.0,1.0,1.3576
+oracle_namespace,1.0,1.0,1.1988

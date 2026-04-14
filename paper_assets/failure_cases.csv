@@ -1,0 +1,24 @@
+section,name,answer,citation_count,conflict_count
+no_update_future_eval,orchid_updated_value,The default command for pulling remote worktrees is `orchid sync`. # Orchid CLI Manual v1 Orchid CLI is the workspace sync tool used in the local deployment stack.,2,0
+no_update_future_eval,nova_updated_value,The default cache mode in Nova Build is `local`.,1,1
+no_update_future_eval,ruma_updated_value,The default retrieval top_k in RUMA Agent is `2`.,1,0
+no_update_future_eval,cinder_updated_value,The default retry backoff mode is `fixed_30s`. # Cinder Queue Manual v1 Cinder Queue is the retry and queue manager used in the background job stack.,2,0
+no_update_future_eval,helios_updated_value,The default publish target is `internal`. # Helios Packager Manual v1 Helios Packager is the release packaging tool used in the internal delivery path.,2,0
+no_update_future_eval,marlin_updated_value,The default healthcheck command is `marlin probe`. # Marlin Proxy Manual v1 Marlin Proxy is the service-edge proxy used in the gateway layer.,2,0
+no_update_future_eval,quartz_updated_value,The default schedule mode is `steady`. # Quartz Scheduler Manual v1 Quartz Scheduler is the orchestration scheduler used for batch planning.,2,0
+no_update_future_eval,atlas_updated_value,The default alert mode in Atlas Monitor is `summary`.,1,0
+no_update_future_eval,ember_updated_value,The default queue class in Ember Runner is `standard`.,1,0
+no_update_future_eval,lumen_updated_value,The default eviction policy in Lumen Cache is `lru`.,1,0
+no_update_future_eval,sable_updated_value,The default rollout mode in Sable Deploy is `linear`.,1,0
+no_update_future_eval,tidal_updated_value,The default snapshot mode in Tidal Sync is `daily`.,1,0
+naive_append_eval,nova_updated_value,The default cache mode in Nova Build is `local`.,1,2
+naive_append_eval,ruma_updated_value,The default retrieval top_k in RUMA Agent is `2`.,1,1
+naive_append_eval,cinder_updated_value,The default retry backoff mode is `fixed_30s`. # Cinder Queue Manual v1 Cinder Queue is the retry and queue manager used in the background job stack.,2,1
+naive_append_eval,helios_updated_value,The default publish target is `internal`. # Helios Packager Manual v1 Helios Packager is the release packaging tool used in the internal delivery path.,2,1
+naive_append_eval,marlin_updated_value,The default healthcheck command is `marlin probe`. # Marlin Proxy Manual v1 Marlin Proxy is the service-edge proxy used in the gateway layer.,2,1
+naive_append_eval,quartz_updated_value,The default schedule mode is `steady`. # Quartz Scheduler Manual v1 Quartz Scheduler is the orchestration scheduler used for batch planning.,2,1
+naive_append_eval,atlas_updated_value,The default alert mode in Atlas Monitor is `summary`.,1,1
+naive_append_eval,ember_updated_value,The default queue class in Ember Runner is `standard`.,1,1
+naive_append_eval,lumen_updated_value,The default eviction policy in Lumen Cache is `lru`.,1,1
+naive_append_eval,sable_updated_value,The default rollout mode in Sable Deploy is `linear`.,1,1
+naive_append_eval,tidal_updated_value,The default snapshot mode in Tidal Sync is `daily`.,1,1

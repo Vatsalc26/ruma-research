@@ -1,0 +1,13 @@
+metric,value,scope
+base_corpus_documents,12,starter corpus
+base_corpus_chunks,12,starter corpus
+active_payload_bytes,5354,starter corpus
+base_build_seconds,0.161169,local run
+superseded_update_seconds,0.132423,local run
+naive_append_update_seconds,0.037093,local run
+conflict_update_seconds,0.069225,local run
+base_avg_query_latency_ms,2.1137,local run
+updated_avg_query_latency_ms,2.4839,local run
+retention_avg_query_latency_ms,2.7196,local run
+naive_append_avg_query_latency_ms,2.0401,local run
+conflict_avg_query_latency_ms,3.2202,local run

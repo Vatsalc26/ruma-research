@@ -1,0 +1,1186 @@
+{
+  "corpus_name": "python_ecosystem_changes_curated_v2",
+  "manifest_path": "D:\\Prototypes\\Project_Breaking\\external_corpora\\python_ecosystem_changes\\manifest.json",
+  "base_corpus_stats": {
+    "documents_indexed": 10,
+    "chunks_indexed": 10,
+    "namespace_bandwidth": 3,
+    "namespace_count": 10,
+    "namespaces": [
+      "external_python_docs_fastapi_pydantic_migration",
+      "external_python_docs_fastapi_python_ceiling",
+      "external_python_docs_fastapi_python_support",
+      "external_python_docs_httpx_app_shortcut",
+      "external_python_docs_httpx_proxy_cleanup",
+      "external_python_docs_pydantic_ai_python_support",
+      "external_python_docs_pytest_python_ceiling",
+      "external_python_docs_pytest_python_support",
+      "external_python_docs_typer_python_support",
+      "external_python_docs_uvicorn_python_support"
+    ],
+    "search_backend": {
+      "requested": "exact",
+      "active": "exact",
+      "stale": false,
+      "fallback_reason": null,
+      "available_backends": [
+        {
+          "name": "exact",
+          "available": true,
+          "reason": null
+        },
+        {
+          "name": "faiss_flat",
+          "available": true,
+          "reason": null
+        },
+        {
+          "name": "hnsw",
+          "available": true,
+          "reason": null
+        }
+      ]
+    },
+    "store": {
+      "num_shards": 16,
+      "capacity_per_shard": 4096,
+      "records_per_shard": [
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "total_records": 10,
+      "active_records": 10,
+      "namespace_counts": {
+        "external_python_docs_fastapi_python_support": 1,
+        "external_python_docs_typer_python_support": 1,
+        "external_python_docs_httpx_app_shortcut": 1,
+        "external_python_docs_httpx_proxy_cleanup": 1,
+        "external_python_docs_fastapi_pydantic_migration": 1,
+        "external_python_docs_pytest_python_support": 1,
+        "external_python_docs_pytest_python_ceiling": 1,
+        "external_python_docs_pydantic_ai_python_support": 1,
+        "external_python_docs_uvicorn_python_support": 1,
+        "external_python_docs_fastapi_python_ceiling": 1
+      },
+      "content_type_counts": {
+        "doc_chunk": 10
+      },
+      "status_counts": {
+        "active": 10
+      },
+      "payload_bytes": 3749,
+      "active_payload_bytes": 3749
+    }
+  },
+  "systems_summary": {
+    "base_build_seconds": 0.063783,
+    "superseded_update_seconds": 0.018171,
+    "naive_append_update_seconds": 0.017945,
+    "conflict_update_seconds": 0.003411,
+    "base_avg_query_latency_ms": 0.8608,
+    "updated_avg_query_latency_ms": 0.9944,
+    "retention_avg_query_latency_ms": 0.7179,
+    "naive_append_avg_query_latency_ms": 1.4576,
+    "conflict_avg_query_latency_ms": 1.2472
+  },
+  "base_known_eval": {
+    "exact_match": 1.0,
+    "avg_query_latency_ms": 0.8608,
+    "median_query_latency_ms": 0.7441,
+    "cases": [
+      {
+        "name": "fastapi_python_ceiling_base_value",
+        "passed": true,
+        "answer": "At that point, Python 3.13 was the newest explicitly supported Python line in the release notes. FastAPI 0.118.0 added support for Python 3.13.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/fastapi_python_ceiling_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_ceiling",
+            "score": 1.118378003438314
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/fastapi_python_ceiling_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_ceiling",
+            "score": 0.9517113367716472
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "fastapi_python_support_base_value",
+        "passed": true,
+        "answer": "FastAPI 0.125.0 dropped support for Python 3.8, so Python 3.9+ remained supported.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/fastapi_python_support_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_support",
+            "score": 1.1223306477069854
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "pytest_python_support_base_value",
+        "passed": true,
+        "answer": "pytest dropped support for Python 3.7, so Python 3.8+ remained supported.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/pytest_python_support_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_support",
+            "score": 1.2085036754608154
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "pytest_python_ceiling_base_value",
+        "passed": true,
+        "answer": "At that point, Python 3.13 was the newest explicitly supported Python line in the changelog. pytest 8.4.0 added support for Python 3.13, described as support for Python 3.13 beta1 at the time of writing.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/pytest_python_ceiling_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_ceiling",
+            "score": 1.0597220980204067
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/pytest_python_ceiling_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_ceiling",
+            "score": 0.905875944174253
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "fastapi_pydantic_migration_base_value",
+        "passed": true,
+        "answer": "FastAPI 0.119.0 supports both Pydantic v2 models and pydantic.v1 models at the same time in the same app to ease migration. FastAPI Pydantic migration before the cleanup.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/fastapi_pydantic_migration_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_pydantic_migration",
+            "score": 1.3873835603396096
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/fastapi_pydantic_migration_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_pydantic_migration",
+            "score": 1.0540502270062764
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "typer_python_support_base_value",
+        "passed": true,
+        "answer": "Before the later breaking cleanup, Typer still supported Python 3.9+, while the release stream was already upgrading types for Python 3.10 and adding internal scripts to migrate docs from Python 3.9 to Python 3.10.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/typer_python_support_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_typer_python_support",
+            "score": 1.0127729881893504
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "httpx_app_shortcut_base_value",
+        "passed": true,
+        "answer": "In HTTPX 0.27.0, the `app=...` shortcut was still present but deprecated.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/httpx_app_shortcut_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_httpx_app_shortcut",
+            "score": 0.9504995942115784
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "httpx_proxy_cleanup_base_value",
+        "passed": true,
+        "answer": "The old proxies argument would still continue to work for the moment, even though HTTPX 0.26.0 added the replacement proxy argument and deprecated proxies. The documented path was already to use proxy or mounts for more complex configurations.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/httpx_proxy_cleanup_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_httpx_proxy_cleanup",
+            "score": 0.8454522755410936
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/httpx_proxy_cleanup_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_httpx_proxy_cleanup",
+            "score": 0.6232300533188714
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "uvicorn_python_support_base_value",
+        "passed": true,
+        "answer": "Before the later cleanup, Uvicorn still supported Python 3.9+, and the release stream had already added support for Python 3.14. Version window: 0.39.0 before the Python 3.9 drop.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/uvicorn_python_support_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_uvicorn_python_support",
+            "score": 0.9653683738275007
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/uvicorn_python_support_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_uvicorn_python_support",
+            "score": 0.783550192009319
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "pydantic_ai_python_support_base_value",
+        "passed": true,
+        "answer": "Before v1.0.0, Pydantic AI still supported Python 3.9+, and the same guide already documented support for ThinkingPart entries in v0.3.0.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/pydantic_ai_python_support_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pydantic_ai_python_support",
+            "score": 1.3062880418517373
+          }
+        ],
+        "conflicts": []
+      }
+    ]
+  },
+  "no_update_future_eval": {
+    "exact_match": 0.0,
+    "avg_query_latency_ms": 0.7172,
+    "median_query_latency_ms": 0.6752,
+    "cases": [
+      {
+        "name": "fastapi_python_ceiling_updated_value",
+        "passed": false,
+        "answer": "At that point, Python 3.13 was the newest explicitly supported Python line in the release notes. FastAPI 0.118.0 added support for Python 3.13.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/fastapi_python_ceiling_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_ceiling",
+            "score": 0.9508859515190125
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/fastapi_python_ceiling_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_ceiling",
+            "score": 0.8675526181856792
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "fastapi_python_support_updated_value",
+        "passed": false,
+        "answer": "FastAPI 0.125.0 dropped support for Python 3.8, so Python 3.9+ remained supported.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/fastapi_python_support_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_support",
+            "score": 0.9755770027637481
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "pytest_python_support_updated_value",
+        "passed": false,
+        "answer": "pytest dropped support for Python 3.7, so Python 3.8+ remained supported.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/pytest_python_support_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_support",
+            "score": 0.9985808193683624
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "pytest_python_ceiling_updated_value",
+        "passed": false,
+        "answer": "At that point, Python 3.13 was the newest explicitly supported Python line in the changelog. pytest 8.4.0 added support for Python 3.13, described as support for Python 3.13 beta1 at the time of writing.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/pytest_python_ceiling_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_ceiling",
+            "score": 0.9187054313146151
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/pytest_python_ceiling_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_ceiling",
+            "score": 0.8417823543915381
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "fastapi_pydantic_migration_updated_value",
+        "passed": false,
+        "answer": "FastAPI 0.119.0 supports both Pydantic v2 models and pydantic.v1 models at the same time in the same app to ease migration.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/fastapi_pydantic_migration_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_pydantic_migration",
+            "score": 0.6933958530426025
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "typer_python_support_updated_value",
+        "passed": false,
+        "answer": "Before the later breaking cleanup, Typer still supported Python 3.9+, while the release stream was already upgrading types for Python 3.10 and adding internal scripts to migrate docs from Python 3.9 to Python 3.10.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/typer_python_support_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_typer_python_support",
+            "score": 0.8120792508125305
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "httpx_app_shortcut_updated_value",
+        "passed": false,
+        "answer": "In HTTPX 0.27.0, the `app=...` shortcut was still present but deprecated.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/httpx_app_shortcut_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_httpx_app_shortcut",
+            "score": 0.8662424342972892
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "httpx_proxy_cleanup_updated_value",
+        "passed": false,
+        "answer": "The old proxies argument would still continue to work for the moment, even though HTTPX 0.26.0 added the replacement proxy argument and deprecated proxies.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/httpx_proxy_cleanup_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_httpx_proxy_cleanup",
+            "score": 0.9288152456283569
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "uvicorn_python_support_updated_value",
+        "passed": false,
+        "answer": "Before the later cleanup, Uvicorn still supported Python 3.9+, and the release stream had already added support for Python 3.14. Version window: 0.39.0 before the Python 3.9 drop.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/uvicorn_python_support_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_uvicorn_python_support",
+            "score": 0.7396164476871491
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/uvicorn_python_support_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_uvicorn_python_support",
+            "score": 0.6396164476871491
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "pydantic_ai_python_support_updated_value",
+        "passed": false,
+        "answer": "Before v1.0.0, Pydantic AI still supported Python 3.9+, and the same guide already documented support for ThinkingPart entries in v0.3.0.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/pydantic_ai_python_support_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pydantic_ai_python_support",
+            "score": 1.112605369091034
+          }
+        ],
+        "conflicts": []
+      }
+    ]
+  },
+  "superseded_update_eval": {
+    "exact_match": 1.0,
+    "avg_query_latency_ms": 0.9944,
+    "median_query_latency_ms": 1.0047,
+    "cases": [
+      {
+        "name": "fastapi_python_ceiling_updated_value",
+        "passed": true,
+        "answer": "FastAPI 0.119.0 added support for Python 3.14, while Python 3.13 still remained supported in the same later release-note stream. FastAPI higher-end Python support after the next upgrade.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_python_ceiling_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_ceiling",
+            "score": 1.042595793803533
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_python_ceiling_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_ceiling",
+            "score": 0.7925957938035328
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "fastapi_python_support_updated_value",
+        "passed": true,
+        "answer": "FastAPI 0.129.0 dropped support for Python 3.9, so Python 3.10+ remained supported. FastAPI Python support after the later drop.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_support",
+            "score": 1.1409479796886444
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_support",
+            "score": 0.7409479796886445
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "pytest_python_support_updated_value",
+        "passed": true,
+        "answer": "pytest dropped support for Python 3.8, so Python 3.9+ remained supported. pytest Python support after the newer drop.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/pytest_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_support",
+            "score": 1.1700919687747955
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/pytest_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_support",
+            "score": 0.7700919687747956
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "pytest_python_ceiling_updated_value",
+        "passed": true,
+        "answer": "pytest 9.0.0 added official support for Python 3.14, while Python 3.13 still remained supported in the same later changelog stream. pytest higher-end Python support after the next upgrade.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/pytest_python_ceiling_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_ceiling",
+            "score": 1.1201786765685449
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/pytest_python_ceiling_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_ceiling",
+            "score": 0.8124863688762372
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "fastapi_pydantic_migration_updated_value",
+        "passed": true,
+        "answer": "FastAPI later dropped support for Pydantic v1, first keeping only short temporary support for Pydantic v2's pydantic.v1 and then dropping pydantic.v1 support outright.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_pydantic_migration_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_pydantic_migration",
+            "score": 1.0192436277866364
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "typer_python_support_updated_value",
+        "passed": true,
+        "answer": "Typer later dropped support for Python 3.9, so Python 3.10+ remained supported.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/typer_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_typer_python_support",
+            "score": 1.1514790773391723
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "httpx_app_shortcut_updated_value",
+        "passed": true,
+        "answer": "In HTTPX 0.28.0, the `app` argument has now been removed. The explicit transport style with `transport=httpx.WSGITransport()` or `transport=httpx.ASGITransport()` remained the documented path after the removal.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/httpx_app_shortcut_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_httpx_app_shortcut",
+            "score": 0.681557582957404
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/httpx_app_shortcut_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_httpx_app_shortcut",
+            "score": 0.681557582957404
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "httpx_proxy_cleanup_updated_value",
+        "passed": true,
+        "answer": "HTTPX 0.28.0 says the deprecated proxies argument has now been removed. The same official release stream still points users to the replacement proxy argument, or mounts for more complex configurations.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/httpx_proxy_cleanup_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_httpx_proxy_cleanup",
+            "score": 0.7375069558620453
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/httpx_proxy_cleanup_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_httpx_proxy_cleanup",
+            "score": 0.6125069558620453
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "uvicorn_python_support_updated_value",
+        "passed": true,
+        "answer": "Uvicorn later dropped Python 3.9, so Python 3.10+ remained supported.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/uvicorn_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_uvicorn_python_support",
+            "score": 1.2119587182998657
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "pydantic_ai_python_support_updated_value",
+        "passed": true,
+        "answer": "Pydantic AI v1.0.0 dropped support for Python 3.9, so Python 3.10+ remained supported.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/pydantic_ai_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pydantic_ai_python_support",
+            "score": 1.1768505096435546
+          }
+        ],
+        "conflicts": []
+      }
+    ]
+  },
+  "retention_eval": {
+    "exact_match": 1.0,
+    "avg_query_latency_ms": 0.7179,
+    "median_query_latency_ms": 0.7094,
+    "cases": [
+      {
+        "name": "fastapi_python_ceiling_retained_value",
+        "passed": true,
+        "answer": "FastAPI 0.119.0 added support for Python 3.14, while Python 3.13 still remained supported in the same later release-note stream. FastAPI higher-end Python support after the next upgrade.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_python_ceiling_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_ceiling",
+            "score": 1.1740354712192829
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_python_ceiling_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_ceiling",
+            "score": 0.7894200866038983
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "fastapi_python_support_retained_value",
+        "passed": true,
+        "answer": "The official FastAPI release notes updated internal types for Python 3.10 and migrated docs from Python 3.9 to Python 3.10. FastAPI Python support after the later drop.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_support",
+            "score": 1.0411275227864585
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_support",
+            "score": 0.707794189453125
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "pytest_python_support_retained_value",
+        "passed": true,
+        "answer": "Python 3.10 remains supported, and the changelog still records Python 3.10 fixes. pytest dropped support for Python 3.8, so Python 3.9+ remained supported.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/pytest_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_support",
+            "score": 1.0997991296980116
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/pytest_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_support",
+            "score": 0.9886880185869005
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "pytest_python_ceiling_retained_value",
+        "passed": true,
+        "answer": "pytest 9.0.0 added official support for Python 3.14, while Python 3.13 still remained supported in the same later changelog stream. pytest higher-end Python support after the next upgrade.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/pytest_python_ceiling_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_ceiling",
+            "score": 1.2309028932026456
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/pytest_python_ceiling_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_ceiling",
+            "score": 0.8023314646312169
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "fastapi_pydantic_migration_retained_value",
+        "passed": true,
+        "answer": "Pydantic v2 still remains the supported migration target, and FastAPI later ran performance tests only on Pydantic v2.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_pydantic_migration_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_pydantic_migration",
+            "score": 1.2335720241069794
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "typer_python_support_retained_value",
+        "passed": true,
+        "answer": "The same release stream still targets Python 3.10 in its types and docs migration notes. Typer later dropped support for Python 3.9, so Python 3.10+ remained supported.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/typer_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_typer_python_support",
+            "score": 0.9437865181402727
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/typer_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_typer_python_support",
+            "score": 0.7619683363220908
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "httpx_app_shortcut_retained_value",
+        "passed": true,
+        "answer": "The explicit transport style with `transport=httpx.WSGITransport()` or `transport=httpx.ASGITransport()` remained the documented path after the removal. In HTTPX 0.28.0, the `app` argument has now been removed.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/httpx_app_shortcut_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_httpx_app_shortcut",
+            "score": 1.2478368053069482
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/httpx_app_shortcut_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_httpx_app_shortcut",
+            "score": 0.8632214206915636
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "httpx_proxy_cleanup_retained_value",
+        "passed": true,
+        "answer": "The same official release stream still points users to the replacement proxy argument, or mounts for more complex configurations. HTTPX 0.28.0 says the deprecated proxies argument has now been removed.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/httpx_proxy_cleanup_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_httpx_proxy_cleanup",
+            "score": 0.712720235188802
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/httpx_proxy_cleanup_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_httpx_proxy_cleanup",
+            "score": 0.601609124077691
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "uvicorn_python_support_retained_value",
+        "passed": true,
+        "answer": "The same official release stream still includes support for Python 3.14. Uvicorn later dropped Python 3.9, so Python 3.10+ remained supported.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/uvicorn_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_uvicorn_python_support",
+            "score": 0.8516281187534332
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/uvicorn_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_uvicorn_python_support",
+            "score": 0.8516281187534332
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "pydantic_ai_python_support_retained_value",
+        "passed": true,
+        "answer": "The same guide still documents ThinkingPart support from the earlier v0.3.0 release notes. Pydantic AI v1.0.0 dropped support for Python 3.9, so Python 3.10+ remained supported.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/pydantic_ai_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pydantic_ai_python_support",
+            "score": 0.7622734478541783
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/pydantic_ai_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pydantic_ai_python_support",
+            "score": 0.7622734478541783
+          }
+        ],
+        "conflicts": []
+      }
+    ]
+  },
+  "naive_append_eval": {
+    "exact_match": 0.6,
+    "avg_query_latency_ms": 1.4576,
+    "median_query_latency_ms": 1.5128,
+    "cases": [
+      {
+        "name": "fastapi_python_ceiling_updated_value",
+        "passed": false,
+        "answer": "FastAPI 0.119.0 added support for Python 3.14, while Python 3.13 still remained supported in the same later release-note stream. At that point, Python 3.13 was the newest explicitly supported Python line in the release notes.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_python_ceiling_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_ceiling",
+            "score": 1.042595793803533
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/fastapi_python_ceiling_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_ceiling",
+            "score": 0.9508859515190125
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_python_ceiling_update.md",
+                "chunk_index": 0,
+                "namespace": "external_python_docs_fastapi_python_ceiling",
+                "score": 1.042595793803533
+              },
+              {
+                "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/fastapi_python_ceiling_base.md",
+                "chunk_index": 0,
+                "namespace": "external_python_docs_fastapi_python_ceiling",
+                "score": 0.9508859515190125
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "fastapi_python_support_updated_value",
+        "passed": true,
+        "answer": "FastAPI 0.129.0 dropped support for Python 3.9, so Python 3.10+ remained supported. FastAPI Python support after the later drop.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_support",
+            "score": 1.1409479796886444
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_support",
+            "score": 0.7409479796886445
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/fastapi_python_support_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_python_support",
+            "score": 0.37557700276374817,
+            "lineage": "external_python_docs_fastapi_python_support::fastapi_python_support",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "pytest_python_support_updated_value",
+        "passed": true,
+        "answer": "pytest dropped support for Python 3.8, so Python 3.9+ remained supported. pytest Python support after the newer drop.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/pytest_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_support",
+            "score": 1.1700919687747955
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/pytest_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_support",
+            "score": 0.7700919687747956
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/pytest_python_support_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_support",
+            "score": 0.3985808193683624,
+            "lineage": "external_python_docs_pytest_python_support::pytest_python_support",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "pytest_python_ceiling_updated_value",
+        "passed": false,
+        "answer": "pytest 9.0.0 added official support for Python 3.14, while Python 3.13 still remained supported in the same later changelog stream. At that point, Python 3.13 was the newest explicitly supported Python line in the changelog.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/pytest_python_ceiling_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_ceiling",
+            "score": 1.1201786765685449
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/pytest_python_ceiling_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pytest_python_ceiling",
+            "score": 0.9187054313146151
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/pytest_python_ceiling_update.md",
+                "chunk_index": 0,
+                "namespace": "external_python_docs_pytest_python_ceiling",
+                "score": 1.1201786765685449
+              },
+              {
+                "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/pytest_python_ceiling_base.md",
+                "chunk_index": 0,
+                "namespace": "external_python_docs_pytest_python_ceiling",
+                "score": 0.9187054313146151
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "fastapi_pydantic_migration_updated_value",
+        "passed": true,
+        "answer": "FastAPI later dropped support for Pydantic v1, first keeping only short temporary support for Pydantic v2's pydantic.v1 and then dropping pydantic.v1 support outright.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_pydantic_migration_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_pydantic_migration",
+            "score": 1.0192436277866364
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "typer_python_support_updated_value",
+        "passed": true,
+        "answer": "Typer later dropped support for Python 3.9, so Python 3.10+ remained supported.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/typer_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_typer_python_support",
+            "score": 1.1514790773391723
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/typer_python_support_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_typer_python_support",
+            "score": 0.3120792508125305,
+            "lineage": "external_python_docs_typer_python_support::typer_python_support",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "httpx_app_shortcut_updated_value",
+        "passed": false,
+        "answer": "In HTTPX 0.27.0, the `app=...` shortcut was still present but deprecated. The explicit transport style with `transport=httpx.WSGITransport()` or `transport=httpx.ASGITransport()` remained the documented path after the removal.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/httpx_app_shortcut_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_httpx_app_shortcut",
+            "score": 0.8662424342972892
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/httpx_app_shortcut_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_httpx_app_shortcut",
+            "score": 0.681557582957404
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/httpx_app_shortcut_base.md",
+                "chunk_index": 0,
+                "namespace": "external_python_docs_httpx_app_shortcut",
+                "score": 0.8662424342972892
+              },
+              {
+                "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/httpx_app_shortcut_update.md",
+                "chunk_index": 0,
+                "namespace": "external_python_docs_httpx_app_shortcut",
+                "score": 0.681557582957404
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "httpx_proxy_cleanup_updated_value",
+        "passed": false,
+        "answer": "The old proxies argument would still continue to work for the moment, even though HTTPX 0.26.0 added the replacement proxy argument and deprecated proxies.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/httpx_proxy_cleanup_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_httpx_proxy_cleanup",
+            "score": 0.9288152456283569
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/httpx_proxy_cleanup_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_httpx_proxy_cleanup",
+            "score": 0.3625069558620453,
+            "lineage": "external_python_docs_httpx_proxy_cleanup::httpx_proxy_cleanup",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "uvicorn_python_support_updated_value",
+        "passed": true,
+        "answer": "Uvicorn later dropped Python 3.9, so Python 3.10+ remained supported.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/uvicorn_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_uvicorn_python_support",
+            "score": 1.2119587182998657
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/base/uvicorn_python_support_base.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_uvicorn_python_support",
+            "score": 0.33961644768714905,
+            "lineage": "external_python_docs_uvicorn_python_support::uvicorn_python_support",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "pydantic_ai_python_support_updated_value",
+        "passed": true,
+        "answer": "Pydantic AI v1.0.0 dropped support for Python 3.9, so Python 3.10+ remained supported.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/pydantic_ai_python_support_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_pydantic_ai_python_support",
+            "score": 1.1768505096435546
+          }
+        ],
+        "conflicts": []
+      }
+    ]
+  },
+  "conflict_eval": {
+    "exact_match": 1.0,
+    "avg_query_latency_ms": 1.2472,
+    "median_query_latency_ms": 1.2472,
+    "cases": [
+      {
+        "name": "fastapi_pydantic_migration_conflicting_guidance",
+        "passed": true,
+        "answer": "Since FastAPI 0.119.0, there is also partial support for Pydantic v1 from inside of Pydantic v2, to facilitate the migration to v2. Pydantic v2 still remains the supported migration target, and FastAPI later ran performance tests only on Pydantic v2.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/conflicts/fastapi_pydantic_partial_support_conflict.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_pydantic_migration",
+            "score": 0.9998574554920197
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_pydantic_migration_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_pydantic_migration",
+            "score": 0.9058061639467876
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/conflicts/fastapi_pydantic_partial_support_conflict.md",
+                "chunk_index": 0,
+                "namespace": "external_python_docs_fastapi_pydantic_migration",
+                "score": 0.9998574554920197
+              },
+              {
+                "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_pydantic_migration_update.md",
+                "chunk_index": 0,
+                "namespace": "external_python_docs_fastapi_pydantic_migration",
+                "score": 0.9058061639467876
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "fastapi_pydantic_migration_conflicting_guidance",
+        "passed": true,
+        "answer": "Using pydantic.v1 is not supported in Python 3.14 and above. FastAPI migration caveat for Python 3.14+.",
+        "citations": [
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/conflicts/fastapi_pydantic_python314_conflict.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_pydantic_migration",
+            "score": 1.3065194606781005
+          },
+          {
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/conflicts/fastapi_pydantic_python314_conflict.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_pydantic_migration",
+            "score": 1.0065194606781005
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_pydantic_migration_update.md",
+            "chunk_index": 0,
+            "namespace": "external_python_docs_fastapi_pydantic_migration",
+            "score": 0.39801132678985596,
+            "lineage": "external_python_docs_fastapi_pydantic_migration::fastapi_pydantic_migration",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      }
+    ]
+  }
+}

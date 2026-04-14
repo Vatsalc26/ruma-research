@@ -1,0 +1,11 @@
+flowchart TD
+    A[Base manuals v1] --> B[Build base memory index]
+    B --> C[Evaluate base-known queries]
+    B --> D[Evaluate future queries without updates]
+    B --> E[Apply versioned updates with supersession]
+    E --> F[Evaluate updated queries]
+    E --> G[Evaluate retained queries]
+    E --> H[Add active conflict docs]
+    H --> I[Evaluate conflict queries]
+    B --> J[Apply updates without supersession]
+    J --> K[Evaluate naive append baseline]

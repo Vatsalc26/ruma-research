@@ -1,0 +1,244 @@
+{
+  "backend_availability": [
+    {
+      "name": "exact",
+      "available": true,
+      "reason": null
+    },
+    {
+      "name": "faiss_flat",
+      "available": true,
+      "reason": null
+    },
+    {
+      "name": "hnsw",
+      "available": true,
+      "reason": null
+    }
+  ],
+  "comparisons": [
+    {
+      "noise_chunks": 0,
+      "requested_backend": "exact",
+      "backend_info": {
+        "requested": "exact",
+        "active": "exact",
+        "stale": false,
+        "fallback_reason": null,
+        "available_backends": [
+          {
+            "name": "exact",
+            "available": true,
+            "reason": null
+          },
+          {
+            "name": "faiss_flat",
+            "available": true,
+            "reason": null
+          },
+          {
+            "name": "hnsw",
+            "available": true,
+            "reason": null
+          }
+        ]
+      },
+      "global_search_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 2.9791
+      },
+      "keyword_routed_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 1.0642
+      }
+    },
+    {
+      "noise_chunks": 0,
+      "requested_backend": "faiss_flat",
+      "backend_info": {
+        "requested": "faiss_flat",
+        "active": "faiss_flat",
+        "stale": false,
+        "fallback_reason": null,
+        "available_backends": [
+          {
+            "name": "exact",
+            "available": true,
+            "reason": null
+          },
+          {
+            "name": "faiss_flat",
+            "available": true,
+            "reason": null
+          },
+          {
+            "name": "hnsw",
+            "available": true,
+            "reason": null
+          }
+        ]
+      },
+      "global_search_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 1.0916
+      },
+      "keyword_routed_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 0.6098
+      }
+    },
+    {
+      "noise_chunks": 0,
+      "requested_backend": "hnsw",
+      "backend_info": {
+        "requested": "hnsw",
+        "active": "hnsw",
+        "stale": false,
+        "fallback_reason": null,
+        "available_backends": [
+          {
+            "name": "exact",
+            "available": true,
+            "reason": null
+          },
+          {
+            "name": "faiss_flat",
+            "available": true,
+            "reason": null
+          },
+          {
+            "name": "hnsw",
+            "available": true,
+            "reason": null
+          }
+        ]
+      },
+      "global_search_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 1.7612
+      },
+      "keyword_routed_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 1.3697
+      }
+    },
+    {
+      "noise_chunks": 1000,
+      "requested_backend": "exact",
+      "backend_info": {
+        "requested": "exact",
+        "active": "exact",
+        "stale": false,
+        "fallback_reason": null,
+        "available_backends": [
+          {
+            "name": "exact",
+            "available": true,
+            "reason": null
+          },
+          {
+            "name": "faiss_flat",
+            "available": true,
+            "reason": null
+          },
+          {
+            "name": "hnsw",
+            "available": true,
+            "reason": null
+          }
+        ]
+      },
+      "global_search_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 2.3647
+      },
+      "keyword_routed_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 1.2405
+      }
+    },
+    {
+      "noise_chunks": 1000,
+      "requested_backend": "faiss_flat",
+      "backend_info": {
+        "requested": "faiss_flat",
+        "active": "faiss_flat",
+        "stale": false,
+        "fallback_reason": null,
+        "available_backends": [
+          {
+            "name": "exact",
+            "available": true,
+            "reason": null
+          },
+          {
+            "name": "faiss_flat",
+            "available": true,
+            "reason": null
+          },
+          {
+            "name": "hnsw",
+            "available": true,
+            "reason": null
+          }
+        ]
+      },
+      "global_search_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 1.8102
+      },
+      "keyword_routed_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 2.5625
+      }
+    },
+    {
+      "noise_chunks": 1000,
+      "requested_backend": "hnsw",
+      "backend_info": {
+        "requested": "hnsw",
+        "active": "hnsw",
+        "stale": false,
+        "fallback_reason": null,
+        "available_backends": [
+          {
+            "name": "exact",
+            "available": true,
+            "reason": null
+          },
+          {
+            "name": "faiss_flat",
+            "available": true,
+            "reason": null
+          },
+          {
+            "name": "hnsw",
+            "available": true,
+            "reason": null
+          }
+        ]
+      },
+      "global_search_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 3.4039
+      },
+      "keyword_routed_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 4.1585
+      }
+    }
+  ],
+  "note": "If FAISS or HNSW are unavailable locally, the benchmark records the requested backend and the exact-search fallback. This keeps the adapter path wired without blocking the current evidence loop on environment setup."
+}

@@ -1,0 +1,149 @@
+{
+  "corpus_name": "python_ecosystem_changes_curated_v2",
+  "namespace": "external_python_docs",
+  "documents": [
+    {
+      "slug": "fastapi_python_ceiling",
+      "subject": "FastAPI",
+      "base_file": "base/fastapi_python_ceiling_base.md",
+      "update_file": "updates/fastapi_python_ceiling_update.md",
+      "base_query": "Before FastAPI added Python 3.14 support, what was the newest explicitly supported Python line?",
+      "update_query": "After FastAPI added Python 3.14 support, what became the newest explicitly supported Python line?",
+      "retention_query": "After FastAPI added Python 3.14 support, which previous newer Python line still remained supported?",
+      "base_value": "Python 3.13 was the newest explicitly supported Python line in the release notes",
+      "updated_value": "Python 3.14",
+      "retained_value": "Python 3.13",
+      "conflicts": []
+    },
+    {
+      "slug": "fastapi_python_support",
+      "subject": "FastAPI",
+      "base_file": "base/fastapi_python_support_base.md",
+      "update_file": "updates/fastapi_python_support_update.md",
+      "base_query": "After FastAPI dropped Python 3.8, what minimum Python line remained supported?",
+      "update_query": "After FastAPI dropped Python 3.9, what minimum Python line remained supported?",
+      "retention_query": "In later FastAPI release notes, which Python syntax level do the docs and internal types target?",
+      "base_value": "Python 3.9+",
+      "updated_value": "Python 3.10+",
+      "retained_value": "Python 3.10",
+      "conflicts": []
+    },
+    {
+      "slug": "pytest_python_support",
+      "subject": "pytest",
+      "base_file": "base/pytest_python_support_base.md",
+      "update_file": "updates/pytest_python_support_update.md",
+      "base_query": "After pytest dropped Python 3.7, what minimum Python line remained supported?",
+      "update_query": "After pytest dropped Python 3.8, what minimum Python line remained supported?",
+      "retention_query": "Does pytest still support Python 3.10 in the later changelog guidance?",
+      "base_value": "Python 3.8+",
+      "updated_value": "Python 3.9+",
+      "retained_value": "Python 3.10",
+      "conflicts": []
+    },
+    {
+      "slug": "pytest_python_ceiling",
+      "subject": "pytest",
+      "base_file": "base/pytest_python_ceiling_base.md",
+      "update_file": "updates/pytest_python_ceiling_update.md",
+      "base_query": "Before pytest added official support for Python 3.14, what was the newest explicitly supported Python line?",
+      "update_query": "After pytest added official support for Python 3.14, what became the newest explicitly supported Python line?",
+      "retention_query": "After pytest added official support for Python 3.14, which previous newer Python line still remained supported?",
+      "base_value": "Python 3.13 was the newest explicitly supported Python line in the changelog",
+      "updated_value": "Python 3.14",
+      "retained_value": "Python 3.13",
+      "conflicts": []
+    },
+    {
+      "slug": "fastapi_pydantic_migration",
+      "subject": "FastAPI / Pydantic",
+      "base_file": "base/fastapi_pydantic_migration_base.md",
+      "update_file": "updates/fastapi_pydantic_migration_update.md",
+      "base_query": "Before the FastAPI cleanup, could the same app use both Pydantic v2 models and pydantic.v1 models?",
+      "update_query": "What changed for direct Pydantic v1 support in later FastAPI releases?",
+      "retention_query": "Which Pydantic generation still remains the supported migration target in later FastAPI guidance?",
+      "base_value": "supports both Pydantic v2 models and pydantic.v1 models at the same time in the same app",
+      "updated_value": "dropped support for Pydantic v1",
+      "retained_value": "Pydantic v2",
+      "conflicts": [
+        {
+          "file": "conflicts/fastapi_pydantic_partial_support_conflict.md",
+          "query": "During the FastAPI migration window, what kind of pydantic.v1 path still existed inside Pydantic v2?",
+          "must_contain": "partial support for Pydantic v1 from inside of Pydantic v2",
+          "lineage": "external_python_docs::fastapi_pydantic_partial_support_note"
+        },
+        {
+          "file": "conflicts/fastapi_pydantic_python314_conflict.md",
+          "query": "Is pydantic.v1 supported in Python 3.14 and above during FastAPI migration?",
+          "must_contain": "not supported in Python 3.14 and above",
+          "lineage": "external_python_docs::fastapi_pydantic_python314_note"
+        }
+      ]
+    },
+    {
+      "slug": "typer_python_support",
+      "subject": "Typer",
+      "base_file": "base/typer_python_support_base.md",
+      "update_file": "updates/typer_python_support_update.md",
+      "base_query": "Before Typer dropped Python 3.9, what minimum Python line still remained supported?",
+      "update_query": "After Typer dropped Python 3.9, what minimum Python line remained supported?",
+      "retention_query": "Which Python syntax line still appears in the later Typer type and docs migration notes?",
+      "base_value": "Python 3.9+",
+      "updated_value": "Python 3.10+",
+      "retained_value": "Python 3.10",
+      "conflicts": []
+    },
+    {
+      "slug": "httpx_app_shortcut",
+      "subject": "HTTPX",
+      "base_file": "base/httpx_app_shortcut_base.md",
+      "update_file": "updates/httpx_app_shortcut_update.md",
+      "base_query": "Before the later HTTPX cleanup, what was the status of the app shortcut?",
+      "update_query": "After the later HTTPX cleanup, what happened to the app shortcut?",
+      "retention_query": "Which explicit transport style still remained the documented path after the HTTPX app shortcut was removed?",
+      "base_value": "still present but deprecated",
+      "updated_value": "has now been removed",
+      "retained_value": "transport=httpx.ASGITransport()",
+      "conflicts": []
+    },
+    {
+      "slug": "httpx_proxy_cleanup",
+      "subject": "HTTPX",
+      "base_file": "base/httpx_proxy_cleanup_base.md",
+      "update_file": "updates/httpx_proxy_cleanup_update.md",
+      "base_query": "Before the later HTTPX proxy cleanup, what was the status of the proxies argument?",
+      "update_query": "After the later HTTPX proxy cleanup, what happened to the proxies argument?",
+      "retention_query": "Which replacement argument still remains the documented path after the HTTPX cleanup?",
+      "base_value": "still continue to work",
+      "updated_value": "has now been removed",
+      "retained_value": "proxy",
+      "conflicts": []
+    },
+    {
+      "slug": "uvicorn_python_support",
+      "subject": "Uvicorn",
+      "base_file": "base/uvicorn_python_support_base.md",
+      "update_file": "updates/uvicorn_python_support_update.md",
+      "base_query": "Before Uvicorn dropped Python 3.9, what minimum Python line still remained supported?",
+      "update_query": "After Uvicorn dropped Python 3.9, what minimum Python line remained supported?",
+      "retention_query": "Which new Python version still remains supported in the later Uvicorn release stream?",
+      "base_value": "Python 3.9+",
+      "updated_value": "Python 3.10+",
+      "retained_value": "Python 3.14",
+      "conflicts": []
+    },
+    {
+      "slug": "pydantic_ai_python_support",
+      "subject": "Pydantic AI",
+      "base_file": "base/pydantic_ai_python_support_base.md",
+      "update_file": "updates/pydantic_ai_python_support_update.md",
+      "base_query": "Before Pydantic AI v1.0.0, what minimum Python line still remained supported?",
+      "update_query": "After Pydantic AI v1.0.0, what minimum Python line remained supported?",
+      "retention_query": "What kind of part does the same Pydantic AI upgrade guide still describe after the later Python support drop?",
+      "base_value": "Python 3.9+",
+      "updated_value": "Python 3.10+",
+      "retained_value": "ThinkingPart",
+      "conflicts": []
+    }
+  ]
+}

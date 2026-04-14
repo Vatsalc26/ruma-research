@@ -1,0 +1,64 @@
+{
+  "corpus_name": "python_ecosystem_changes",
+  "namespace": "external_python_docs",
+  "documents": [
+    {
+      "slug": "fastapi_release_notes",
+      "subject": "FastAPI",
+      "base_file": "base/fastapi_release_notes_base.md",
+      "update_file": "updates/fastapi_release_notes_update.md",
+      "base_query": "TODO: fill query for the older FastAPI guidance",
+      "update_query": "TODO: fill query for the newer FastAPI guidance",
+      "retention_query": "TODO: fill query for unchanged FastAPI guidance",
+      "base_value": "TODO_OLD_VALUE",
+      "updated_value": "TODO_NEW_VALUE",
+      "retained_value": "TODO_RETAINED_VALUE",
+      "conflicts": [
+        {
+          "file": "conflicts/fastapi_operator_note.md",
+          "query": "TODO: fill query for conflicting FastAPI guidance",
+          "must_contain": "TODO_CONFLICT_VALUE"
+        }
+      ]
+    },
+    {
+      "slug": "pydantic_changelog",
+      "subject": "Pydantic",
+      "base_file": "base/pydantic_changelog_base.md",
+      "update_file": "updates/pydantic_changelog_update.md",
+      "base_query": "TODO: fill query for the older Pydantic guidance",
+      "update_query": "TODO: fill query for the newer Pydantic guidance",
+      "retention_query": "TODO: fill query for unchanged Pydantic guidance",
+      "base_value": "TODO_OLD_VALUE",
+      "updated_value": "TODO_NEW_VALUE",
+      "retained_value": "TODO_RETAINED_VALUE",
+      "conflicts": []
+    },
+    {
+      "slug": "pytest_changelog",
+      "subject": "pytest",
+      "base_file": "base/pytest_changelog_base.md",
+      "update_file": "updates/pytest_changelog_update.md",
+      "base_query": "TODO: fill query for the older pytest guidance",
+      "update_query": "TODO: fill query for the newer pytest guidance",
+      "retention_query": "TODO: fill query for unchanged pytest guidance",
+      "base_value": "TODO_OLD_VALUE",
+      "updated_value": "TODO_NEW_VALUE",
+      "retained_value": "TODO_RETAINED_VALUE",
+      "conflicts": []
+    },
+    {
+      "slug": "typer_releases",
+      "subject": "Typer",
+      "base_file": "base/typer_releases_base.md",
+      "update_file": "updates/typer_releases_update.md",
+      "base_query": "TODO: fill query for the older Typer guidance",
+      "update_query": "TODO: fill query for the newer Typer guidance",
+      "retention_query": "TODO: fill query for unchanged Typer guidance",
+      "base_value": "TODO_OLD_VALUE",
+      "updated_value": "TODO_NEW_VALUE",
+      "retained_value": "TODO_RETAINED_VALUE",
+      "conflicts": []
+    }
+  ]
+}

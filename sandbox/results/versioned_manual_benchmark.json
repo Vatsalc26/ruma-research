@@ -1,0 +1,1389 @@
+{
+  "base_corpus_stats": {
+    "documents_indexed": 12,
+    "chunks_indexed": 12,
+    "namespace_bandwidth": 3,
+    "namespace_count": 1,
+    "namespaces": [
+      "versioned_manuals"
+    ],
+    "search_backend": {
+      "requested": "exact",
+      "active": "exact",
+      "stale": false,
+      "fallback_reason": null,
+      "available_backends": [
+        {
+          "name": "exact",
+          "available": true,
+          "reason": null
+        },
+        {
+          "name": "faiss_flat",
+          "available": true,
+          "reason": null
+        },
+        {
+          "name": "hnsw",
+          "available": true,
+          "reason": null
+        }
+      ]
+    },
+    "store": {
+      "num_shards": 16,
+      "capacity_per_shard": 4096,
+      "records_per_shard": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        5,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "total_records": 12,
+      "active_records": 12,
+      "namespace_counts": {
+        "versioned_manuals": 12
+      },
+      "content_type_counts": {
+        "doc_chunk": 12
+      },
+      "status_counts": {
+        "active": 12
+      },
+      "payload_bytes": 5354,
+      "active_payload_bytes": 5354
+    }
+  },
+  "systems_summary": {
+    "base_build_seconds": 0.161169,
+    "superseded_update_seconds": 0.132423,
+    "naive_append_update_seconds": 0.037093,
+    "conflict_update_seconds": 0.069225,
+    "base_avg_query_latency_ms": 2.1137,
+    "updated_avg_query_latency_ms": 2.4839,
+    "retention_avg_query_latency_ms": 2.7196,
+    "naive_append_avg_query_latency_ms": 2.0401,
+    "conflict_avg_query_latency_ms": 3.2202
+  },
+  "base_known_eval": {
+    "exact_match": 1.0,
+    "avg_query_latency_ms": 2.1137,
+    "median_query_latency_ms": 2.0418,
+    "cases": [
+      {
+        "name": "orchid_base_value",
+        "passed": true,
+        "answer": "The default command for pulling remote worktrees is `orchid sync`. # Orchid CLI Manual v1 Orchid CLI is the workspace sync tool used in the local deployment stack.",
+        "citations": [
+          {
+            "source": "versioned_manuals/orchid_cli_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.9003971559660775
+          },
+          {
+            "source": "versioned_manuals/orchid_cli_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.6146828702517918
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "nova_base_value",
+        "passed": true,
+        "answer": "The default cache mode in Nova Build is `local`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/nova_build_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2120323379834494
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manuals/lumen_cache_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.22970226407051086,
+            "lineage": "versioned_manuals::versioned_manuals/lumen_cache_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "ruma_base_value",
+        "passed": true,
+        "answer": "The default retrieval top_k in RUMA Agent is `2`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/ruma_agent_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.1967504223187766
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "cinder_base_value",
+        "passed": true,
+        "answer": "The default retry backoff mode is `fixed_30s`. # Cinder Queue Manual v1 Cinder Queue is the retry and queue manager used in the background job stack.",
+        "citations": [
+          {
+            "source": "versioned_manuals/cinder_queue_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0433637840407235
+          },
+          {
+            "source": "versioned_manuals/cinder_queue_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.9005066411835807
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "helios_base_value",
+        "passed": true,
+        "answer": "The default publish target is `internal`. # Helios Packager Manual v1 Helios Packager is the release packaging tool used in the internal delivery path.",
+        "citations": [
+          {
+            "source": "versioned_manuals/helios_packager_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.9521982967853546
+          },
+          {
+            "source": "versioned_manuals/helios_packager_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.7855316301186879
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "marlin_base_value",
+        "passed": true,
+        "answer": "The default healthcheck command is `marlin probe`. # Marlin Proxy Manual v1 Marlin Proxy is the service-edge proxy used in the gateway layer.",
+        "citations": [
+          {
+            "source": "versioned_manuals/marlin_proxy_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.1433675090471902
+          },
+          {
+            "source": "versioned_manuals/marlin_proxy_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.8100341757138569
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "quartz_base_value",
+        "passed": true,
+        "answer": "The default schedule mode is `steady`. # Quartz Scheduler Manual v1 Quartz Scheduler is the orchestration scheduler used for batch planning.",
+        "citations": [
+          {
+            "source": "versioned_manuals/quartz_scheduler_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.93272864818573
+          },
+          {
+            "source": "versioned_manuals/quartz_scheduler_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.7660619815190632
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "atlas_base_value",
+        "passed": true,
+        "answer": "The default alert mode in Atlas Monitor is `summary`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/atlas_monitor_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2680058677991233
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "ember_base_value",
+        "passed": true,
+        "answer": "The default queue class in Ember Runner is `standard`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/ember_runner_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2849225302537284
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "lumen_base_value",
+        "passed": true,
+        "answer": "The default eviction policy in Lumen Cache is `lru`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/lumen_cache_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2861336072285972
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "sable_base_value",
+        "passed": true,
+        "answer": "The default rollout mode in Sable Deploy is `linear`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/sable_deploy_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2711442907651267
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "tidal_base_value",
+        "passed": true,
+        "answer": "The default snapshot mode in Tidal Sync is `daily`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/tidal_sync_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2786200543244681
+          }
+        ],
+        "conflicts": []
+      }
+    ]
+  },
+  "no_update_future_eval": {
+    "exact_match": 0.0,
+    "avg_query_latency_ms": 1.9121,
+    "median_query_latency_ms": 2.1337,
+    "cases": [
+      {
+        "name": "orchid_updated_value",
+        "passed": false,
+        "answer": "The default command for pulling remote worktrees is `orchid sync`. # Orchid CLI Manual v1 Orchid CLI is the workspace sync tool used in the local deployment stack.",
+        "citations": [
+          {
+            "source": "versioned_manuals/orchid_cli_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.9003971559660775
+          },
+          {
+            "source": "versioned_manuals/orchid_cli_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.6146828702517918
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "nova_updated_value",
+        "passed": false,
+        "answer": "The default cache mode in Nova Build is `local`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/nova_build_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2120323379834494
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manuals/lumen_cache_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.22970226407051086,
+            "lineage": "versioned_manuals::versioned_manuals/lumen_cache_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "ruma_updated_value",
+        "passed": false,
+        "answer": "The default retrieval top_k in RUMA Agent is `2`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/ruma_agent_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.1967504223187766
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "cinder_updated_value",
+        "passed": false,
+        "answer": "The default retry backoff mode is `fixed_30s`. # Cinder Queue Manual v1 Cinder Queue is the retry and queue manager used in the background job stack.",
+        "citations": [
+          {
+            "source": "versioned_manuals/cinder_queue_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0433637840407235
+          },
+          {
+            "source": "versioned_manuals/cinder_queue_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.9005066411835807
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "helios_updated_value",
+        "passed": false,
+        "answer": "The default publish target is `internal`. # Helios Packager Manual v1 Helios Packager is the release packaging tool used in the internal delivery path.",
+        "citations": [
+          {
+            "source": "versioned_manuals/helios_packager_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.9521982967853546
+          },
+          {
+            "source": "versioned_manuals/helios_packager_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.7855316301186879
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "marlin_updated_value",
+        "passed": false,
+        "answer": "The default healthcheck command is `marlin probe`. # Marlin Proxy Manual v1 Marlin Proxy is the service-edge proxy used in the gateway layer.",
+        "citations": [
+          {
+            "source": "versioned_manuals/marlin_proxy_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.1433675090471902
+          },
+          {
+            "source": "versioned_manuals/marlin_proxy_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.8100341757138569
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "quartz_updated_value",
+        "passed": false,
+        "answer": "The default schedule mode is `steady`. # Quartz Scheduler Manual v1 Quartz Scheduler is the orchestration scheduler used for batch planning.",
+        "citations": [
+          {
+            "source": "versioned_manuals/quartz_scheduler_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.93272864818573
+          },
+          {
+            "source": "versioned_manuals/quartz_scheduler_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.7660619815190632
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "atlas_updated_value",
+        "passed": false,
+        "answer": "The default alert mode in Atlas Monitor is `summary`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/atlas_monitor_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2680058677991233
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "ember_updated_value",
+        "passed": false,
+        "answer": "The default queue class in Ember Runner is `standard`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/ember_runner_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2849225302537284
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "lumen_updated_value",
+        "passed": false,
+        "answer": "The default eviction policy in Lumen Cache is `lru`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/lumen_cache_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2861336072285972
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "sable_updated_value",
+        "passed": false,
+        "answer": "The default rollout mode in Sable Deploy is `linear`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/sable_deploy_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2711442907651267
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "tidal_updated_value",
+        "passed": false,
+        "answer": "The default snapshot mode in Tidal Sync is `daily`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/tidal_sync_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2786200543244681
+          }
+        ],
+        "conflicts": []
+      }
+    ]
+  },
+  "superseded_update_eval": {
+    "exact_match": 1.0,
+    "avg_query_latency_ms": 2.4839,
+    "median_query_latency_ms": 2.4033,
+    "cases": [
+      {
+        "name": "orchid_updated_value",
+        "passed": true,
+        "answer": "The default command for pulling remote worktrees is now `orchid pull`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/orchid_cli_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0316775568893979
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "nova_updated_value",
+        "passed": true,
+        "answer": "The default cache mode in Nova Build is now `shared_remote`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/nova_build_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2022143801053367
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/lumen_cache_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.2549275755882263,
+            "lineage": "versioned_manuals::versioned_manuals/lumen_cache_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "ruma_updated_value",
+        "passed": true,
+        "answer": "The default retrieval top_k in RUMA Agent is now `4`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/ruma_agent_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.1522833009560904
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "cinder_updated_value",
+        "passed": true,
+        "answer": "The default retry backoff mode is now `jittered_exponential`. # Cinder Queue Manual v2 Cinder Queue remains the retry and queue manager used in the background job stack.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/cinder_queue_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.9033074123518807
+          },
+          {
+            "source": "versioned_manual_updates/cinder_queue_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.7604502694947379
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "helios_updated_value",
+        "passed": true,
+        "answer": "The default publish target is now `staging_registry`. # Helios Packager Manual v2 Helios Packager is still the release packaging tool used in the delivery path.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/helios_packager_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.8560145497322083
+          },
+          {
+            "source": "versioned_manual_updates/helios_packager_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.6893478830655415
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "marlin_updated_value",
+        "passed": true,
+        "answer": "The default healthcheck command is now `marlin health`. # Marlin Proxy Manual v2 Marlin Proxy remains the service-edge proxy used in the gateway layer.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/marlin_proxy_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.9914365808169047
+          },
+          {
+            "source": "versioned_manual_updates/marlin_proxy_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.6581032474835713
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "quartz_updated_value",
+        "passed": true,
+        "answer": "The default schedule mode is now `adaptive`. # Quartz Scheduler Manual v2 Quartz Scheduler remains the orchestration scheduler used for batch planning.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/quartz_scheduler_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.8541550636291504
+          },
+          {
+            "source": "versioned_manual_updates/quartz_scheduler_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.6874883969624836
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "atlas_updated_value",
+        "passed": true,
+        "answer": "The default alert mode in Atlas Monitor is now `adaptive_summary`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/atlas_monitor_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.1622399588425956
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "ember_updated_value",
+        "passed": true,
+        "answer": "The default queue class in Ember Runner is now `priority_burst`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/ember_runner_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.1854067047437034
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "lumen_updated_value",
+        "passed": true,
+        "answer": "The default eviction policy in Lumen Cache is now `segmented_lru`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/lumen_cache_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.1410309871037803
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "sable_updated_value",
+        "passed": true,
+        "answer": "The default rollout mode in Sable Deploy is now `canary_safe`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/sable_deploy_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.140195687611898
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "tidal_updated_value",
+        "passed": true,
+        "answer": "The default snapshot mode in Tidal Sync is now `hourly_delta`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/tidal_sync_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.1542950173219046
+          }
+        ],
+        "conflicts": []
+      }
+    ]
+  },
+  "retention_eval": {
+    "exact_match": 1.0,
+    "avg_query_latency_ms": 2.7196,
+    "median_query_latency_ms": 2.4753,
+    "cases": [
+      {
+        "name": "orchid_retained_value",
+        "passed": true,
+        "answer": "The main Orchid CLI config file remains `orchid.yml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/orchid_cli_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0426267862319947
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "nova_retained_value",
+        "passed": true,
+        "answer": "The main manifest file for Nova Build remains `nova.json`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/nova_build_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.1700372278690339
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "ruma_retained_value",
+        "passed": true,
+        "answer": "The answer mode in RUMA Agent remains `citation-first`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/ruma_agent_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0724404633045197
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "cinder_retained_value",
+        "passed": true,
+        "answer": "The main Cinder Queue config file remains `cinder.toml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/cinder_queue_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0388810068368912
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "helios_retained_value",
+        "passed": true,
+        "answer": "The main Helios Packager manifest file remains `helios.yaml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/helios_packager_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0777956426143647
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "marlin_retained_value",
+        "passed": true,
+        "answer": "The main Marlin Proxy config file remains `proxy.ini`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/marlin_proxy_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0743846774101258
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "quartz_retained_value",
+        "passed": true,
+        "answer": "The main Quartz Scheduler config file remains `quartz.yaml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/quartz_scheduler_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.1056377172470093
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "atlas_retained_value",
+        "passed": true,
+        "answer": "The main Atlas Monitor config file remains `atlas.toml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/atlas_monitor_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.062361079454422
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "ember_retained_value",
+        "passed": true,
+        "answer": "The main Ember Runner config file remains `ember.yml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/ember_runner_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0624081373214722
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "lumen_retained_value",
+        "passed": true,
+        "answer": "The main Lumen Cache config file remains `lumen.toml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/lumen_cache_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0447165101766587
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "sable_retained_value",
+        "passed": true,
+        "answer": "The main Sable Deploy config file remains `sable.yaml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/sable_deploy_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0593180239200592
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "tidal_retained_value",
+        "passed": true,
+        "answer": "The main Tidal Sync config file remains `tidal.json`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/tidal_sync_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0324010729789734
+          }
+        ],
+        "conflicts": []
+      }
+    ]
+  },
+  "naive_append_eval": {
+    "exact_match": 0.08333333333333333,
+    "avg_query_latency_ms": 2.0401,
+    "median_query_latency_ms": 2.0779,
+    "cases": [
+      {
+        "name": "orchid_updated_value",
+        "passed": true,
+        "answer": "The default command for pulling remote worktrees is now `orchid pull`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/orchid_cli_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0316775568893979
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "nova_updated_value",
+        "passed": false,
+        "answer": "The default cache mode in Nova Build is `local`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/nova_build_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2120323379834494
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/nova_build_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.3688810467720032,
+            "lineage": "versioned_manuals::versioned_manuals/nova_build_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          },
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/lumen_cache_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.2549275755882263,
+            "lineage": "versioned_manuals::versioned_manuals/lumen_cache_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "ruma_updated_value",
+        "passed": false,
+        "answer": "The default retrieval top_k in RUMA Agent is `2`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/ruma_agent_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.1967504223187766
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/ruma_agent_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.31894996762275696,
+            "lineage": "versioned_manuals::versioned_manuals/ruma_agent_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "cinder_updated_value",
+        "passed": false,
+        "answer": "The default retry backoff mode is `fixed_30s`. # Cinder Queue Manual v1 Cinder Queue is the retry and queue manager used in the background job stack.",
+        "citations": [
+          {
+            "source": "versioned_manuals/cinder_queue_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0433637840407235
+          },
+          {
+            "source": "versioned_manuals/cinder_queue_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.9005066411835807
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/cinder_queue_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.3318788409233093,
+            "lineage": "versioned_manuals::versioned_manuals/cinder_queue_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "helios_updated_value",
+        "passed": false,
+        "answer": "The default publish target is `internal`. # Helios Packager Manual v1 Helios Packager is the release packaging tool used in the internal delivery path.",
+        "citations": [
+          {
+            "source": "versioned_manuals/helios_packager_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.9521982967853546
+          },
+          {
+            "source": "versioned_manuals/helios_packager_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.7855316301186879
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/helios_packager_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.35601454973220825,
+            "lineage": "versioned_manuals::versioned_manuals/helios_packager_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "marlin_updated_value",
+        "passed": false,
+        "answer": "The default healthcheck command is `marlin probe`. # Marlin Proxy Manual v1 Marlin Proxy is the service-edge proxy used in the gateway layer.",
+        "citations": [
+          {
+            "source": "versioned_manuals/marlin_proxy_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.1433675090471902
+          },
+          {
+            "source": "versioned_manuals/marlin_proxy_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.8100341757138569
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/marlin_proxy_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.32476991415023804,
+            "lineage": "versioned_manuals::versioned_manuals/marlin_proxy_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "quartz_updated_value",
+        "passed": false,
+        "answer": "The default schedule mode is `steady`. # Quartz Scheduler Manual v1 Quartz Scheduler is the orchestration scheduler used for batch planning.",
+        "citations": [
+          {
+            "source": "versioned_manuals/quartz_scheduler_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.93272864818573
+          },
+          {
+            "source": "versioned_manuals/quartz_scheduler_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.7660619815190632
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/quartz_scheduler_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.3541550636291504,
+            "lineage": "versioned_manuals::versioned_manuals/quartz_scheduler_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "atlas_updated_value",
+        "passed": false,
+        "answer": "The default alert mode in Atlas Monitor is `summary`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/atlas_monitor_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2680058677991233
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/atlas_monitor_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.3289066255092621,
+            "lineage": "versioned_manuals::versioned_manuals/atlas_monitor_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "ember_updated_value",
+        "passed": false,
+        "answer": "The default queue class in Ember Runner is `standard`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/ember_runner_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2849225302537284
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/ember_runner_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.3520733714103699,
+            "lineage": "versioned_manuals::versioned_manuals/ember_runner_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "lumen_updated_value",
+        "passed": false,
+        "answer": "The default eviction policy in Lumen Cache is `lru`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/lumen_cache_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2861336072285972
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/lumen_cache_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.3076976537704468,
+            "lineage": "versioned_manuals::versioned_manuals/lumen_cache_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "sable_updated_value",
+        "passed": false,
+        "answer": "The default rollout mode in Sable Deploy is `linear`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/sable_deploy_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2711442907651267
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/sable_deploy_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.30686235427856445,
+            "lineage": "versioned_manuals::versioned_manuals/sable_deploy_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "tidal_updated_value",
+        "passed": false,
+        "answer": "The default snapshot mode in Tidal Sync is `daily`.",
+        "citations": [
+          {
+            "source": "versioned_manuals/tidal_sync_v1.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2786200543244681
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/tidal_sync_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.32096168398857117,
+            "lineage": "versioned_manuals::versioned_manuals/tidal_sync_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      }
+    ]
+  },
+  "conflict_eval": {
+    "exact_match": 0.8333333333333334,
+    "avg_query_latency_ms": 3.2202,
+    "median_query_latency_ms": 3.2677,
+    "cases": [
+      {
+        "name": "ruma_conflicting_guidance",
+        "passed": true,
+        "answer": "# RUMA Operator Guide For large retrieval jobs, the default retrieval top_k in RUMA guidance is `6`. Operators should compare this guide with the main agent manual when deciding whether the large-job mode applies.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/ruma_operator_guide.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.9884093138906691
+          },
+          {
+            "source": "versioned_manual_conflicts/ruma_operator_guide.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.7661870916684468
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/ruma_agent_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.2567867636680603,
+            "lineage": "versioned_manuals::versioned_manuals/ruma_agent_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "marlin_conflicting_guidance",
+        "passed": false,
+        "answer": "# Marlin Edge Runbook For high-throughput edge traffic, the default Marlin healthcheck command is `marlin health --edge`. This runbook covers a narrower edge deployment context than the main Marlin Proxy manual.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/marlin_edge_runbook.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0447002410888673
+          },
+          {
+            "source": "versioned_manual_conflicts/marlin_edge_runbook.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.9447002410888672
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "quartz_conflicting_guidance",
+        "passed": true,
+        "answer": "# Quartz Night Ops Runbook During overnight rebuild windows, the default Quartz scheduling mode is `burst_safe`. This runbook covers a narrower operating context than the main Quartz Scheduler manual.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/quartz_night_ops.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0350097851319746
+          },
+          {
+            "source": "versioned_manual_conflicts/quartz_night_ops.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.8531916033137928
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/quartz_scheduler_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.2994350790977478,
+            "lineage": "versioned_manuals::versioned_manuals/quartz_scheduler_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "atlas_conflicting_guidance",
+        "passed": true,
+        "answer": "# Atlas Incident Runbook For live incident escalations, the default alert mode in Atlas Monitor guidance is `always_page`. Operators should compare this runbook with the main monitor manual when deciding whether incident escalation mode applies.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/atlas_incident_runbook.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.2223096013069152
+          },
+          {
+            "source": "versioned_manual_conflicts/atlas_incident_runbook.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0223096013069153
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/atlas_monitor_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.2865801453590393,
+            "lineage": "versioned_manuals::versioned_manuals/atlas_monitor_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "sable_conflicting_guidance",
+        "passed": true,
+        "answer": "# Sable Release Runbook For regulated release windows, the default rollout mode in Sable Deploy guidance is `serial_guard`. Operators should compare this runbook with the main deploy manual when deciding whether regulated release mode applies.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/sable_release_runbook.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.0841081261634826
+          },
+          {
+            "source": "versioned_manual_conflicts/sable_release_runbook.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.8841081261634827
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/sable_deploy_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.3006342053413391,
+            "lineage": "versioned_manuals::versioned_manuals/sable_deploy_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "tidal_conflicting_guidance",
+        "passed": true,
+        "answer": "# Tidal Recovery Runbook For disaster-recovery restores, the default snapshot mode in Tidal Sync guidance is `full_mirror`. Operators should compare this runbook with the main sync manual when deciding whether disaster-recovery mode applies.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/tidal_recovery_runbook.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 1.1857246577739715
+          },
+          {
+            "source": "versioned_manual_conflicts/tidal_recovery_runbook.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.8857246577739716
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/tidal_sync_v2.md",
+            "chunk_index": 0,
+            "namespace": "versioned_manuals",
+            "score": 0.2961350083351135,
+            "lineage": "versioned_manuals::versioned_manuals/tidal_sync_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      }
+    ]
+  }
+}

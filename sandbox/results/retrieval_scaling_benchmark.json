@@ -1,0 +1,74 @@
+{
+  "case_count": 30,
+  "scale_points": [
+    {
+      "noise_chunks": 0,
+      "total_records": 30,
+      "namespace_count": 12,
+      "global_search_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 1.4648,
+        "median_query_latency_ms": 1.1522
+      },
+      "keyword_routed_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 1.0236,
+        "median_query_latency_ms": 0.7335
+      }
+    },
+    {
+      "noise_chunks": 100,
+      "total_records": 130,
+      "namespace_count": 112,
+      "global_search_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 3.1015,
+        "median_query_latency_ms": 2.4094
+      },
+      "keyword_routed_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 1.386,
+        "median_query_latency_ms": 1.1915
+      }
+    },
+    {
+      "noise_chunks": 500,
+      "total_records": 530,
+      "namespace_count": 512,
+      "global_search_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 3.2711,
+        "median_query_latency_ms": 2.5012
+      },
+      "keyword_routed_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 1.3907,
+        "median_query_latency_ms": 1.1854
+      }
+    },
+    {
+      "noise_chunks": 1000,
+      "total_records": 1030,
+      "namespace_count": 1012,
+      "global_search_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 3.2134,
+        "median_query_latency_ms": 2.4266
+      },
+      "keyword_routed_eval": {
+        "exact_match": 1.0,
+        "namespace_hit_rate": 1.0,
+        "avg_query_latency_ms": 1.4354,
+        "median_query_latency_ms": 1.2934
+      }
+    }
+  ],
+  "note": "This benchmark measures when unrestricted exact search starts to become meaningfully more expensive than simple namespace-routed exact search as irrelevant document noise grows."
+}

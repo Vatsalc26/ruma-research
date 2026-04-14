@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "RUMA: Routed Updatable Memory Architecture for Versioned Document Updates"
+message: "If you use this repository, please cite the software release and the accompanying preprint."
+type: software
+authors:
+  - family-names: "Chavda"
+    given-names: "Vatsal"
+    orcid: "https://orcid.org/0009-0005-8789-7301"
+    affiliation: "Independent Researcher"
+version: "0.1.0"
+license: "Apache-2.0"
+repository-code: "https://github.com/Vatsalc26/ruma-research"
+keywords:
+  - "routed memory"
+  - "external memory"
+  - "versioned document updates"
+  - "grounded answering"
+  - "supersession"

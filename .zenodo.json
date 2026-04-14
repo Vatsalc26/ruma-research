@@ -1,0 +1,32 @@
+{
+  "title": "RUMA v0.1.0: Routed Updatable Memory Architecture for Versioned Document Updates",
+  "version": "v0.1.0",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "Apache-2.0",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Chavda, Vatsal",
+      "orcid": "0009-0005-8789-7301",
+      "affiliation": "Independent Researcher",
+      "type": "Researcher"
+    }
+  ],
+  "keywords": [
+    "routed memory",
+    "external memory",
+    "versioned document updates",
+    "retrieval",
+    "knowledge updates",
+    "grounded answering",
+    "supersession"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Vatsalc26/ruma-research",
+      "relation": "isIdenticalTo",
+      "resource_type": "software"
+    }
+  ]
+}

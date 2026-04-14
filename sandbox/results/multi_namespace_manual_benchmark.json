@@ -1,0 +1,2525 @@
+{
+  "index_stats": {
+    "documents_indexed": 0,
+    "chunks_indexed": 30,
+    "namespace_bandwidth": 2,
+    "namespace_count": 12,
+    "namespaces": [
+      "atlas",
+      "cinder",
+      "ember",
+      "helios",
+      "lumen",
+      "marlin",
+      "nova",
+      "orchid",
+      "quartz",
+      "ruma",
+      "sable",
+      "tidal"
+    ],
+    "search_backend": {
+      "requested": "exact",
+      "active": "exact",
+      "stale": false,
+      "fallback_reason": null,
+      "available_backends": [
+        {
+          "name": "exact",
+          "available": true,
+          "reason": null
+        },
+        {
+          "name": "faiss_flat",
+          "available": false,
+          "reason": "faiss Python package is not installed"
+        },
+        {
+          "name": "hnsw",
+          "available": false,
+          "reason": "hnswlib Python package is not installed"
+        }
+      ]
+    },
+    "store": {
+      "num_shards": 24,
+      "capacity_per_shard": 4096,
+      "records_per_shard": [
+        0,
+        0,
+        1,
+        3,
+        1,
+        0,
+        0,
+        0,
+        2,
+        3,
+        2,
+        4,
+        1,
+        1,
+        0,
+        4,
+        3,
+        0,
+        0,
+        2,
+        0,
+        0,
+        3,
+        0
+      ],
+      "total_records": 30,
+      "active_records": 18,
+      "namespace_counts": {
+        "atlas": 3,
+        "orchid": 2,
+        "ruma": 3,
+        "marlin": 3,
+        "tidal": 3,
+        "ember": 2,
+        "cinder": 2,
+        "sable": 3,
+        "nova": 2,
+        "lumen": 2,
+        "helios": 2,
+        "quartz": 3
+      },
+      "content_type_counts": {
+        "doc_chunk": 30
+      },
+      "status_counts": {
+        "superseded": 12,
+        "active": 18
+      },
+      "payload_bytes": 14071,
+      "active_payload_bytes": 8717
+    }
+  },
+  "case_count": 30,
+  "global_search_eval": {
+    "exact_match": 1.0,
+    "namespace_hit_rate": 1.0,
+    "avg_query_latency_ms": 2.0184,
+    "median_query_latency_ms": 1.8469,
+    "cases": [
+      {
+        "name": "orchid_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "orchid",
+        "routed_namespaces": null,
+        "answer": "The default command for pulling remote worktrees is now `orchid pull`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/orchid_cli_v2.md",
+            "chunk_index": 0,
+            "namespace": "orchid",
+            "score": 1.1279395052364896
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "nova_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "nova",
+        "routed_namespaces": null,
+        "answer": "The default cache mode in Nova Build is now `shared_remote`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/nova_build_v2.md",
+            "chunk_index": 0,
+            "namespace": "nova",
+            "score": 1.2203558584054313
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "ruma_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "ruma",
+        "routed_namespaces": null,
+        "answer": "The default retrieval top_k in RUMA Agent is now `4`. # RUMA Operator Guide For large retrieval jobs, the default retrieval top_k in RUMA guidance is `6`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/ruma_agent_v2.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 1.1773154040177665
+          },
+          {
+            "source": "versioned_manual_conflicts/ruma_operator_guide.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 0.9899649421374003
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_updates/ruma_agent_v2.md",
+                "chunk_index": 0,
+                "namespace": "ruma",
+                "score": 1.1773154040177665
+              },
+              {
+                "source": "versioned_manual_conflicts/ruma_operator_guide.md",
+                "chunk_index": 0,
+                "namespace": "ruma",
+                "score": 0.9899649421374003
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "cinder_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "cinder",
+        "routed_namespaces": null,
+        "answer": "The default retry backoff mode is now `jittered_exponential`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/cinder_queue_v2.md",
+            "chunk_index": 0,
+            "namespace": "cinder",
+            "score": 1.0135793430464608
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "helios_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "helios",
+        "routed_namespaces": null,
+        "answer": "The default publish target is now `staging_registry`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/helios_packager_v2.md",
+            "chunk_index": 0,
+            "namespace": "helios",
+            "score": 0.9630836844444275
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "marlin_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "marlin",
+        "routed_namespaces": null,
+        "answer": "The default healthcheck command is now `marlin health`. # Marlin Edge Runbook For high-throughput edge traffic, the default Marlin healthcheck command is `marlin health --edge`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/marlin_proxy_v2.md",
+            "chunk_index": 0,
+            "namespace": "marlin",
+            "score": 1.0595049063364663
+          },
+          {
+            "source": "versioned_manual_conflicts/marlin_edge_runbook.md",
+            "chunk_index": 0,
+            "namespace": "marlin",
+            "score": 0.9637975494066874
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_updates/marlin_proxy_v2.md",
+                "chunk_index": 0,
+                "namespace": "marlin",
+                "score": 1.0595049063364663
+              },
+              {
+                "source": "versioned_manual_conflicts/marlin_edge_runbook.md",
+                "chunk_index": 0,
+                "namespace": "marlin",
+                "score": 0.9637975494066874
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "quartz_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "quartz",
+        "routed_namespaces": null,
+        "answer": "The default schedule mode is now `adaptive`. # Quartz Night Ops Runbook During overnight rebuild windows, the default Quartz scheduling mode is `burst_safe`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/quartz_scheduler_v2.md",
+            "chunk_index": 0,
+            "namespace": "quartz",
+            "score": 0.9124605655670166
+          },
+          {
+            "source": "versioned_manual_conflicts/quartz_night_ops.md",
+            "chunk_index": 0,
+            "namespace": "quartz",
+            "score": 0.8181427717208862
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_updates/quartz_scheduler_v2.md",
+                "chunk_index": 0,
+                "namespace": "quartz",
+                "score": 0.9124605655670166
+              },
+              {
+                "source": "versioned_manual_conflicts/quartz_night_ops.md",
+                "chunk_index": 0,
+                "namespace": "quartz",
+                "score": 0.8181427717208862
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "atlas_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "atlas",
+        "routed_namespaces": null,
+        "answer": "The default alert mode in Atlas Monitor is now `adaptive_summary`. # Atlas Incident Runbook For live incident escalations, the default alert mode in Atlas Monitor guidance is `always_page`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/atlas_monitor_v2.md",
+            "chunk_index": 0,
+            "namespace": "atlas",
+            "score": 1.227100690205892
+          },
+          {
+            "source": "versioned_manual_conflicts/atlas_incident_runbook.md",
+            "chunk_index": 0,
+            "namespace": "atlas",
+            "score": 1.1632241805394492
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_updates/atlas_monitor_v2.md",
+                "chunk_index": 0,
+                "namespace": "atlas",
+                "score": 1.227100690205892
+              },
+              {
+                "source": "versioned_manual_conflicts/atlas_incident_runbook.md",
+                "chunk_index": 0,
+                "namespace": "atlas",
+                "score": 1.1632241805394492
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ember_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "ember",
+        "routed_namespaces": null,
+        "answer": "The default queue class in Ember Runner is now `priority_burst`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/ember_runner_v2.md",
+            "chunk_index": 0,
+            "namespace": "ember",
+            "score": 1.2861612041791282
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "lumen_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "lumen",
+        "routed_namespaces": null,
+        "answer": "The default eviction policy in Lumen Cache is now `segmented_lru`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/lumen_cache_v2.md",
+            "chunk_index": 0,
+            "namespace": "lumen",
+            "score": 1.2463067372639975
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "sable_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "sable",
+        "routed_namespaces": null,
+        "answer": "The default rollout mode in Sable Deploy is now `canary_safe`. # Sable Release Runbook For regulated release windows, the default rollout mode in Sable Deploy guidance is `serial_guard`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/sable_deploy_v2.md",
+            "chunk_index": 0,
+            "namespace": "sable",
+            "score": 1.2176095147927604
+          },
+          {
+            "source": "versioned_manual_conflicts/sable_release_runbook.md",
+            "chunk_index": 0,
+            "namespace": "sable",
+            "score": 1.1587378283341727
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_updates/sable_deploy_v2.md",
+                "chunk_index": 0,
+                "namespace": "sable",
+                "score": 1.2176095147927604
+              },
+              {
+                "source": "versioned_manual_conflicts/sable_release_runbook.md",
+                "chunk_index": 0,
+                "namespace": "sable",
+                "score": 1.1587378283341727
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "tidal_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "tidal",
+        "routed_namespaces": null,
+        "answer": "# Tidal Recovery Runbook For disaster-recovery restores, the default snapshot mode in Tidal Sync guidance is `full_mirror`. The default snapshot mode in Tidal Sync is now `hourly_delta`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/tidal_recovery_runbook.md",
+            "chunk_index": 0,
+            "namespace": "tidal",
+            "score": 1.228954335053762
+          },
+          {
+            "source": "versioned_manual_updates/tidal_sync_v2.md",
+            "chunk_index": 0,
+            "namespace": "tidal",
+            "score": 1.2233329912026725
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_conflicts/tidal_recovery_runbook.md",
+                "chunk_index": 0,
+                "namespace": "tidal",
+                "score": 1.228954335053762
+              },
+              {
+                "source": "versioned_manual_updates/tidal_sync_v2.md",
+                "chunk_index": 0,
+                "namespace": "tidal",
+                "score": 1.2233329912026725
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "orchid_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "orchid",
+        "routed_namespaces": null,
+        "answer": "The main Orchid CLI config file remains `orchid.yml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/orchid_cli_v2.md",
+            "chunk_index": 0,
+            "namespace": "orchid",
+            "score": 1.132227647304535
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "nova_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "nova",
+        "routed_namespaces": null,
+        "answer": "The main manifest file for Nova Build remains `nova.json`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/nova_build_v2.md",
+            "chunk_index": 0,
+            "namespace": "nova",
+            "score": 1.1907113075256348
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "ruma_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "ruma",
+        "routed_namespaces": null,
+        "answer": "The answer mode in RUMA Agent remains `citation-first`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/ruma_agent_v2.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 1.0994714677333832
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_conflicts/ruma_operator_guide.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 0.20912811160087585,
+            "lineage": "versioned_manuals::operator_guide::ruma_agent",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "cinder_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "cinder",
+        "routed_namespaces": null,
+        "answer": "The main Cinder Queue config file remains `cinder.toml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/cinder_queue_v2.md",
+            "chunk_index": 0,
+            "namespace": "cinder",
+            "score": 1.1239800333976746
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "helios_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "helios",
+        "routed_namespaces": null,
+        "answer": "The main Helios Packager manifest file remains `helios.yaml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/helios_packager_v2.md",
+            "chunk_index": 0,
+            "namespace": "helios",
+            "score": 1.162928032875061
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "marlin_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "marlin",
+        "routed_namespaces": null,
+        "answer": "The main Marlin Proxy config file remains `proxy.ini`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/marlin_proxy_v2.md",
+            "chunk_index": 0,
+            "namespace": "marlin",
+            "score": 1.1381315469741822
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "quartz_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "quartz",
+        "routed_namespaces": null,
+        "answer": "The main Quartz Scheduler config file remains `quartz.yaml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/quartz_scheduler_v2.md",
+            "chunk_index": 0,
+            "namespace": "quartz",
+            "score": 1.1652358651161194
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "atlas_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "atlas",
+        "routed_namespaces": null,
+        "answer": "The main Atlas Monitor config file remains `atlas.toml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/atlas_monitor_v2.md",
+            "chunk_index": 0,
+            "namespace": "atlas",
+            "score": 1.1234041333198548
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "ember_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "ember",
+        "routed_namespaces": null,
+        "answer": "The main Ember Runner config file remains `ember.yml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/ember_runner_v2.md",
+            "chunk_index": 0,
+            "namespace": "ember",
+            "score": 1.1409422636032105
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "lumen_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "lumen",
+        "routed_namespaces": null,
+        "answer": "The main Lumen Cache config file remains `lumen.toml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/lumen_cache_v2.md",
+            "chunk_index": 0,
+            "namespace": "lumen",
+            "score": 1.1426910042762757
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "sable_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "sable",
+        "routed_namespaces": null,
+        "answer": "The main Sable Deploy config file remains `sable.yaml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/sable_deploy_v2.md",
+            "chunk_index": 0,
+            "namespace": "sable",
+            "score": 1.1318607807159424
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "tidal_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "tidal",
+        "routed_namespaces": null,
+        "answer": "The main Tidal Sync config file remains `tidal.json`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/tidal_sync_v2.md",
+            "chunk_index": 0,
+            "namespace": "tidal",
+            "score": 1.092418897151947
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "ruma_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "ruma",
+        "routed_namespaces": null,
+        "answer": "# RUMA Operator Guide For large retrieval jobs, the default retrieval top_k in RUMA guidance is `6`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/ruma_operator_guide.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 0.9987642500135634
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/ruma_agent_v2.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 0.2588461637496948,
+            "lineage": "ruma::versioned_manuals/ruma_agent_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "marlin_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "marlin",
+        "routed_namespaces": null,
+        "answer": "# Marlin Edge Runbook For high-throughput edge traffic, the default Marlin healthcheck command is `marlin health --edge`. The default healthcheck command is now `marlin health`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/marlin_edge_runbook.md",
+            "chunk_index": 0,
+            "namespace": "marlin",
+            "score": 1.01780424118042
+          },
+          {
+            "source": "versioned_manual_updates/marlin_proxy_v2.md",
+            "chunk_index": 0,
+            "namespace": "marlin",
+            "score": 0.8669891595840454
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_conflicts/marlin_edge_runbook.md",
+                "chunk_index": 0,
+                "namespace": "marlin",
+                "score": 1.01780424118042
+              },
+              {
+                "source": "versioned_manual_updates/marlin_proxy_v2.md",
+                "chunk_index": 0,
+                "namespace": "marlin",
+                "score": 0.8669891595840454
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "quartz_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "quartz",
+        "routed_namespaces": null,
+        "answer": "# Quartz Night Ops Runbook During overnight rebuild windows, the default Quartz scheduling mode is `burst_safe`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/quartz_night_ops.md",
+            "chunk_index": 0,
+            "namespace": "quartz",
+            "score": 1.016633464531465
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/quartz_scheduler_v2.md",
+            "chunk_index": 0,
+            "namespace": "quartz",
+            "score": 0.33845484256744385,
+            "lineage": "quartz::versioned_manuals/quartz_scheduler_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "atlas_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "atlas",
+        "routed_namespaces": null,
+        "answer": "# Atlas Incident Runbook For live incident escalations, the default alert mode in Atlas Monitor guidance is `always_page`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/atlas_incident_runbook.md",
+            "chunk_index": 0,
+            "namespace": "atlas",
+            "score": 1.2170681476593017
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/atlas_monitor_v2.md",
+            "chunk_index": 0,
+            "namespace": "atlas",
+            "score": 0.3288251757621765,
+            "lineage": "atlas::versioned_manuals/atlas_monitor_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "sable_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "sable",
+        "routed_namespaces": null,
+        "answer": "# Sable Release Runbook For regulated release windows, the default rollout mode in Sable Deploy guidance is `serial_guard`. # Sable Deploy Manual v2 Sable Deploy is still the rollout controller used in the release pipeline.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/sable_release_runbook.md",
+            "chunk_index": 0,
+            "namespace": "sable",
+            "score": 1.0546113669872283
+          },
+          {
+            "source": "versioned_manual_updates/sable_deploy_v2.md",
+            "chunk_index": 0,
+            "namespace": "sable",
+            "score": 0.8589873015880585
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_conflicts/sable_release_runbook.md",
+                "chunk_index": 0,
+                "namespace": "sable",
+                "score": 1.0546113669872283
+              },
+              {
+                "source": "versioned_manual_updates/sable_deploy_v2.md",
+                "chunk_index": 0,
+                "namespace": "sable",
+                "score": 0.8589873015880585
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "tidal_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "tidal",
+        "routed_namespaces": null,
+        "answer": "# Tidal Recovery Runbook For disaster-recovery restores, the default snapshot mode in Tidal Sync guidance is `full_mirror`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/tidal_recovery_runbook.md",
+            "chunk_index": 0,
+            "namespace": "tidal",
+            "score": 1.1606369733810424
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/tidal_sync_v2.md",
+            "chunk_index": 0,
+            "namespace": "tidal",
+            "score": 0.3470003008842468,
+            "lineage": "tidal::versioned_manuals/tidal_sync_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      }
+    ]
+  },
+  "keyword_routed_eval": {
+    "exact_match": 1.0,
+    "namespace_hit_rate": 1.0,
+    "avg_query_latency_ms": 1.3576,
+    "median_query_latency_ms": 1.0102,
+    "cases": [
+      {
+        "name": "orchid_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "orchid",
+        "routed_namespaces": [
+          "orchid"
+        ],
+        "answer": "The default command for pulling remote worktrees is now `orchid pull`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/orchid_cli_v2.md",
+            "chunk_index": 0,
+            "namespace": "orchid",
+            "score": 1.1279395052364896
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "nova_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "nova",
+        "routed_namespaces": [
+          "nova"
+        ],
+        "answer": "The default cache mode in Nova Build is now `shared_remote`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/nova_build_v2.md",
+            "chunk_index": 0,
+            "namespace": "nova",
+            "score": 1.2203558584054313
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "ruma_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "ruma",
+        "routed_namespaces": [
+          "ruma"
+        ],
+        "answer": "The default retrieval top_k in RUMA Agent is now `4`. # RUMA Operator Guide For large retrieval jobs, the default retrieval top_k in RUMA guidance is `6`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/ruma_agent_v2.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 1.1773154040177665
+          },
+          {
+            "source": "versioned_manual_conflicts/ruma_operator_guide.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 0.9899649421374003
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_updates/ruma_agent_v2.md",
+                "chunk_index": 0,
+                "namespace": "ruma",
+                "score": 1.1773154040177665
+              },
+              {
+                "source": "versioned_manual_conflicts/ruma_operator_guide.md",
+                "chunk_index": 0,
+                "namespace": "ruma",
+                "score": 0.9899649421374003
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "cinder_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "cinder",
+        "routed_namespaces": [
+          "cinder"
+        ],
+        "answer": "The default retry backoff mode is now `jittered_exponential`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/cinder_queue_v2.md",
+            "chunk_index": 0,
+            "namespace": "cinder",
+            "score": 1.0135793430464608
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "helios_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "helios",
+        "routed_namespaces": [
+          "helios"
+        ],
+        "answer": "The default publish target is now `staging_registry`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/helios_packager_v2.md",
+            "chunk_index": 0,
+            "namespace": "helios",
+            "score": 0.9630836844444275
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "marlin_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "marlin",
+        "routed_namespaces": [
+          "marlin"
+        ],
+        "answer": "The default healthcheck command is now `marlin health`. # Marlin Edge Runbook For high-throughput edge traffic, the default Marlin healthcheck command is `marlin health --edge`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/marlin_proxy_v2.md",
+            "chunk_index": 0,
+            "namespace": "marlin",
+            "score": 1.0595049063364663
+          },
+          {
+            "source": "versioned_manual_conflicts/marlin_edge_runbook.md",
+            "chunk_index": 0,
+            "namespace": "marlin",
+            "score": 0.9637975494066874
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_updates/marlin_proxy_v2.md",
+                "chunk_index": 0,
+                "namespace": "marlin",
+                "score": 1.0595049063364663
+              },
+              {
+                "source": "versioned_manual_conflicts/marlin_edge_runbook.md",
+                "chunk_index": 0,
+                "namespace": "marlin",
+                "score": 0.9637975494066874
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "quartz_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "quartz",
+        "routed_namespaces": [
+          "quartz"
+        ],
+        "answer": "The default schedule mode is now `adaptive`. # Quartz Night Ops Runbook During overnight rebuild windows, the default Quartz scheduling mode is `burst_safe`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/quartz_scheduler_v2.md",
+            "chunk_index": 0,
+            "namespace": "quartz",
+            "score": 0.9124605655670166
+          },
+          {
+            "source": "versioned_manual_conflicts/quartz_night_ops.md",
+            "chunk_index": 0,
+            "namespace": "quartz",
+            "score": 0.8181427717208862
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_updates/quartz_scheduler_v2.md",
+                "chunk_index": 0,
+                "namespace": "quartz",
+                "score": 0.9124605655670166
+              },
+              {
+                "source": "versioned_manual_conflicts/quartz_night_ops.md",
+                "chunk_index": 0,
+                "namespace": "quartz",
+                "score": 0.8181427717208862
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "atlas_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "atlas",
+        "routed_namespaces": [
+          "atlas"
+        ],
+        "answer": "The default alert mode in Atlas Monitor is now `adaptive_summary`. # Atlas Incident Runbook For live incident escalations, the default alert mode in Atlas Monitor guidance is `always_page`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/atlas_monitor_v2.md",
+            "chunk_index": 0,
+            "namespace": "atlas",
+            "score": 1.227100690205892
+          },
+          {
+            "source": "versioned_manual_conflicts/atlas_incident_runbook.md",
+            "chunk_index": 0,
+            "namespace": "atlas",
+            "score": 1.1632241805394492
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_updates/atlas_monitor_v2.md",
+                "chunk_index": 0,
+                "namespace": "atlas",
+                "score": 1.227100690205892
+              },
+              {
+                "source": "versioned_manual_conflicts/atlas_incident_runbook.md",
+                "chunk_index": 0,
+                "namespace": "atlas",
+                "score": 1.1632241805394492
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ember_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "ember",
+        "routed_namespaces": [
+          "ember"
+        ],
+        "answer": "The default queue class in Ember Runner is now `priority_burst`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/ember_runner_v2.md",
+            "chunk_index": 0,
+            "namespace": "ember",
+            "score": 1.2861612041791282
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "lumen_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "lumen",
+        "routed_namespaces": [
+          "lumen"
+        ],
+        "answer": "The default eviction policy in Lumen Cache is now `segmented_lru`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/lumen_cache_v2.md",
+            "chunk_index": 0,
+            "namespace": "lumen",
+            "score": 1.2463067372639975
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "sable_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "sable",
+        "routed_namespaces": [
+          "sable"
+        ],
+        "answer": "The default rollout mode in Sable Deploy is now `canary_safe`. # Sable Release Runbook For regulated release windows, the default rollout mode in Sable Deploy guidance is `serial_guard`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/sable_deploy_v2.md",
+            "chunk_index": 0,
+            "namespace": "sable",
+            "score": 1.2176095147927604
+          },
+          {
+            "source": "versioned_manual_conflicts/sable_release_runbook.md",
+            "chunk_index": 0,
+            "namespace": "sable",
+            "score": 1.1587378283341727
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_updates/sable_deploy_v2.md",
+                "chunk_index": 0,
+                "namespace": "sable",
+                "score": 1.2176095147927604
+              },
+              {
+                "source": "versioned_manual_conflicts/sable_release_runbook.md",
+                "chunk_index": 0,
+                "namespace": "sable",
+                "score": 1.1587378283341727
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "tidal_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "tidal",
+        "routed_namespaces": [
+          "tidal"
+        ],
+        "answer": "# Tidal Recovery Runbook For disaster-recovery restores, the default snapshot mode in Tidal Sync guidance is `full_mirror`. The default snapshot mode in Tidal Sync is now `hourly_delta`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/tidal_recovery_runbook.md",
+            "chunk_index": 0,
+            "namespace": "tidal",
+            "score": 1.228954335053762
+          },
+          {
+            "source": "versioned_manual_updates/tidal_sync_v2.md",
+            "chunk_index": 0,
+            "namespace": "tidal",
+            "score": 1.2233329912026725
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_conflicts/tidal_recovery_runbook.md",
+                "chunk_index": 0,
+                "namespace": "tidal",
+                "score": 1.228954335053762
+              },
+              {
+                "source": "versioned_manual_updates/tidal_sync_v2.md",
+                "chunk_index": 0,
+                "namespace": "tidal",
+                "score": 1.2233329912026725
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "orchid_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "orchid",
+        "routed_namespaces": [
+          "orchid"
+        ],
+        "answer": "The main Orchid CLI config file remains `orchid.yml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/orchid_cli_v2.md",
+            "chunk_index": 0,
+            "namespace": "orchid",
+            "score": 1.132227647304535
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "nova_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "nova",
+        "routed_namespaces": [
+          "nova"
+        ],
+        "answer": "The main manifest file for Nova Build remains `nova.json`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/nova_build_v2.md",
+            "chunk_index": 0,
+            "namespace": "nova",
+            "score": 1.1907113075256348
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "ruma_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "ruma",
+        "routed_namespaces": [
+          "ruma"
+        ],
+        "answer": "The answer mode in RUMA Agent remains `citation-first`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/ruma_agent_v2.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 1.0994714677333832
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_conflicts/ruma_operator_guide.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 0.20912811160087585,
+            "lineage": "versioned_manuals::operator_guide::ruma_agent",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "cinder_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "cinder",
+        "routed_namespaces": [
+          "cinder"
+        ],
+        "answer": "The main Cinder Queue config file remains `cinder.toml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/cinder_queue_v2.md",
+            "chunk_index": 0,
+            "namespace": "cinder",
+            "score": 1.1239800333976746
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "helios_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "helios",
+        "routed_namespaces": [
+          "helios"
+        ],
+        "answer": "The main Helios Packager manifest file remains `helios.yaml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/helios_packager_v2.md",
+            "chunk_index": 0,
+            "namespace": "helios",
+            "score": 1.162928032875061
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "marlin_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "marlin",
+        "routed_namespaces": [
+          "marlin"
+        ],
+        "answer": "The main Marlin Proxy config file remains `proxy.ini`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/marlin_proxy_v2.md",
+            "chunk_index": 0,
+            "namespace": "marlin",
+            "score": 1.1381315469741822
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "quartz_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "quartz",
+        "routed_namespaces": [
+          "quartz"
+        ],
+        "answer": "The main Quartz Scheduler config file remains `quartz.yaml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/quartz_scheduler_v2.md",
+            "chunk_index": 0,
+            "namespace": "quartz",
+            "score": 1.1652358651161194
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "atlas_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "atlas",
+        "routed_namespaces": [
+          "atlas"
+        ],
+        "answer": "The main Atlas Monitor config file remains `atlas.toml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/atlas_monitor_v2.md",
+            "chunk_index": 0,
+            "namespace": "atlas",
+            "score": 1.1234041333198548
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "ember_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "ember",
+        "routed_namespaces": [
+          "ember"
+        ],
+        "answer": "The main Ember Runner config file remains `ember.yml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/ember_runner_v2.md",
+            "chunk_index": 0,
+            "namespace": "ember",
+            "score": 1.1409422636032105
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "lumen_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "lumen",
+        "routed_namespaces": [
+          "lumen"
+        ],
+        "answer": "The main Lumen Cache config file remains `lumen.toml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/lumen_cache_v2.md",
+            "chunk_index": 0,
+            "namespace": "lumen",
+            "score": 1.1426910042762757
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "sable_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "sable",
+        "routed_namespaces": [
+          "sable"
+        ],
+        "answer": "The main Sable Deploy config file remains `sable.yaml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/sable_deploy_v2.md",
+            "chunk_index": 0,
+            "namespace": "sable",
+            "score": 1.1318607807159424
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "tidal_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "tidal",
+        "routed_namespaces": [
+          "tidal"
+        ],
+        "answer": "The main Tidal Sync config file remains `tidal.json`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/tidal_sync_v2.md",
+            "chunk_index": 0,
+            "namespace": "tidal",
+            "score": 1.092418897151947
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "ruma_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "ruma",
+        "routed_namespaces": [
+          "ruma"
+        ],
+        "answer": "# RUMA Operator Guide For large retrieval jobs, the default retrieval top_k in RUMA guidance is `6`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/ruma_operator_guide.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 0.9987642500135634
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/ruma_agent_v2.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 0.2588461637496948,
+            "lineage": "ruma::versioned_manuals/ruma_agent_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "marlin_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "marlin",
+        "routed_namespaces": [
+          "marlin"
+        ],
+        "answer": "# Marlin Edge Runbook For high-throughput edge traffic, the default Marlin healthcheck command is `marlin health --edge`. The default healthcheck command is now `marlin health`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/marlin_edge_runbook.md",
+            "chunk_index": 0,
+            "namespace": "marlin",
+            "score": 1.01780424118042
+          },
+          {
+            "source": "versioned_manual_updates/marlin_proxy_v2.md",
+            "chunk_index": 0,
+            "namespace": "marlin",
+            "score": 0.8669891595840454
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_conflicts/marlin_edge_runbook.md",
+                "chunk_index": 0,
+                "namespace": "marlin",
+                "score": 1.01780424118042
+              },
+              {
+                "source": "versioned_manual_updates/marlin_proxy_v2.md",
+                "chunk_index": 0,
+                "namespace": "marlin",
+                "score": 0.8669891595840454
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "quartz_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "quartz",
+        "routed_namespaces": [
+          "quartz"
+        ],
+        "answer": "# Quartz Night Ops Runbook During overnight rebuild windows, the default Quartz scheduling mode is `burst_safe`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/quartz_night_ops.md",
+            "chunk_index": 0,
+            "namespace": "quartz",
+            "score": 1.016633464531465
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/quartz_scheduler_v2.md",
+            "chunk_index": 0,
+            "namespace": "quartz",
+            "score": 0.33845484256744385,
+            "lineage": "quartz::versioned_manuals/quartz_scheduler_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "atlas_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "atlas",
+        "routed_namespaces": [
+          "atlas"
+        ],
+        "answer": "# Atlas Incident Runbook For live incident escalations, the default alert mode in Atlas Monitor guidance is `always_page`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/atlas_incident_runbook.md",
+            "chunk_index": 0,
+            "namespace": "atlas",
+            "score": 1.2170681476593017
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/atlas_monitor_v2.md",
+            "chunk_index": 0,
+            "namespace": "atlas",
+            "score": 0.3288251757621765,
+            "lineage": "atlas::versioned_manuals/atlas_monitor_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "sable_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "sable",
+        "routed_namespaces": [
+          "sable"
+        ],
+        "answer": "# Sable Release Runbook For regulated release windows, the default rollout mode in Sable Deploy guidance is `serial_guard`. # Sable Deploy Manual v2 Sable Deploy is still the rollout controller used in the release pipeline.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/sable_release_runbook.md",
+            "chunk_index": 0,
+            "namespace": "sable",
+            "score": 1.0546113669872283
+          },
+          {
+            "source": "versioned_manual_updates/sable_deploy_v2.md",
+            "chunk_index": 0,
+            "namespace": "sable",
+            "score": 0.8589873015880585
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_conflicts/sable_release_runbook.md",
+                "chunk_index": 0,
+                "namespace": "sable",
+                "score": 1.0546113669872283
+              },
+              {
+                "source": "versioned_manual_updates/sable_deploy_v2.md",
+                "chunk_index": 0,
+                "namespace": "sable",
+                "score": 0.8589873015880585
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "tidal_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "tidal",
+        "routed_namespaces": [
+          "tidal"
+        ],
+        "answer": "# Tidal Recovery Runbook For disaster-recovery restores, the default snapshot mode in Tidal Sync guidance is `full_mirror`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/tidal_recovery_runbook.md",
+            "chunk_index": 0,
+            "namespace": "tidal",
+            "score": 1.1606369733810424
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/tidal_sync_v2.md",
+            "chunk_index": 0,
+            "namespace": "tidal",
+            "score": 0.3470003008842468,
+            "lineage": "tidal::versioned_manuals/tidal_sync_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      }
+    ]
+  },
+  "oracle_namespace_eval": {
+    "exact_match": 1.0,
+    "namespace_hit_rate": 1.0,
+    "avg_query_latency_ms": 1.1988,
+    "median_query_latency_ms": 0.9593,
+    "cases": [
+      {
+        "name": "orchid_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "orchid",
+        "routed_namespaces": [
+          "orchid"
+        ],
+        "answer": "The default command for pulling remote worktrees is now `orchid pull`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/orchid_cli_v2.md",
+            "chunk_index": 0,
+            "namespace": "orchid",
+            "score": 1.1279395052364896
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "nova_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "nova",
+        "routed_namespaces": [
+          "nova"
+        ],
+        "answer": "The default cache mode in Nova Build is now `shared_remote`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/nova_build_v2.md",
+            "chunk_index": 0,
+            "namespace": "nova",
+            "score": 1.2203558584054313
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "ruma_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "ruma",
+        "routed_namespaces": [
+          "ruma"
+        ],
+        "answer": "The default retrieval top_k in RUMA Agent is now `4`. # RUMA Operator Guide For large retrieval jobs, the default retrieval top_k in RUMA guidance is `6`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/ruma_agent_v2.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 1.1773154040177665
+          },
+          {
+            "source": "versioned_manual_conflicts/ruma_operator_guide.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 0.9899649421374003
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_updates/ruma_agent_v2.md",
+                "chunk_index": 0,
+                "namespace": "ruma",
+                "score": 1.1773154040177665
+              },
+              {
+                "source": "versioned_manual_conflicts/ruma_operator_guide.md",
+                "chunk_index": 0,
+                "namespace": "ruma",
+                "score": 0.9899649421374003
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "cinder_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "cinder",
+        "routed_namespaces": [
+          "cinder"
+        ],
+        "answer": "The default retry backoff mode is now `jittered_exponential`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/cinder_queue_v2.md",
+            "chunk_index": 0,
+            "namespace": "cinder",
+            "score": 1.0135793430464608
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "helios_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "helios",
+        "routed_namespaces": [
+          "helios"
+        ],
+        "answer": "The default publish target is now `staging_registry`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/helios_packager_v2.md",
+            "chunk_index": 0,
+            "namespace": "helios",
+            "score": 0.9630836844444275
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "marlin_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "marlin",
+        "routed_namespaces": [
+          "marlin"
+        ],
+        "answer": "The default healthcheck command is now `marlin health`. # Marlin Edge Runbook For high-throughput edge traffic, the default Marlin healthcheck command is `marlin health --edge`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/marlin_proxy_v2.md",
+            "chunk_index": 0,
+            "namespace": "marlin",
+            "score": 1.0595049063364663
+          },
+          {
+            "source": "versioned_manual_conflicts/marlin_edge_runbook.md",
+            "chunk_index": 0,
+            "namespace": "marlin",
+            "score": 0.9637975494066874
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_updates/marlin_proxy_v2.md",
+                "chunk_index": 0,
+                "namespace": "marlin",
+                "score": 1.0595049063364663
+              },
+              {
+                "source": "versioned_manual_conflicts/marlin_edge_runbook.md",
+                "chunk_index": 0,
+                "namespace": "marlin",
+                "score": 0.9637975494066874
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "quartz_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "quartz",
+        "routed_namespaces": [
+          "quartz"
+        ],
+        "answer": "The default schedule mode is now `adaptive`. # Quartz Night Ops Runbook During overnight rebuild windows, the default Quartz scheduling mode is `burst_safe`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/quartz_scheduler_v2.md",
+            "chunk_index": 0,
+            "namespace": "quartz",
+            "score": 0.9124605655670166
+          },
+          {
+            "source": "versioned_manual_conflicts/quartz_night_ops.md",
+            "chunk_index": 0,
+            "namespace": "quartz",
+            "score": 0.8181427717208862
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_updates/quartz_scheduler_v2.md",
+                "chunk_index": 0,
+                "namespace": "quartz",
+                "score": 0.9124605655670166
+              },
+              {
+                "source": "versioned_manual_conflicts/quartz_night_ops.md",
+                "chunk_index": 0,
+                "namespace": "quartz",
+                "score": 0.8181427717208862
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "atlas_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "atlas",
+        "routed_namespaces": [
+          "atlas"
+        ],
+        "answer": "The default alert mode in Atlas Monitor is now `adaptive_summary`. # Atlas Incident Runbook For live incident escalations, the default alert mode in Atlas Monitor guidance is `always_page`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/atlas_monitor_v2.md",
+            "chunk_index": 0,
+            "namespace": "atlas",
+            "score": 1.227100690205892
+          },
+          {
+            "source": "versioned_manual_conflicts/atlas_incident_runbook.md",
+            "chunk_index": 0,
+            "namespace": "atlas",
+            "score": 1.1632241805394492
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_updates/atlas_monitor_v2.md",
+                "chunk_index": 0,
+                "namespace": "atlas",
+                "score": 1.227100690205892
+              },
+              {
+                "source": "versioned_manual_conflicts/atlas_incident_runbook.md",
+                "chunk_index": 0,
+                "namespace": "atlas",
+                "score": 1.1632241805394492
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ember_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "ember",
+        "routed_namespaces": [
+          "ember"
+        ],
+        "answer": "The default queue class in Ember Runner is now `priority_burst`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/ember_runner_v2.md",
+            "chunk_index": 0,
+            "namespace": "ember",
+            "score": 1.2861612041791282
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "lumen_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "lumen",
+        "routed_namespaces": [
+          "lumen"
+        ],
+        "answer": "The default eviction policy in Lumen Cache is now `segmented_lru`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/lumen_cache_v2.md",
+            "chunk_index": 0,
+            "namespace": "lumen",
+            "score": 1.2463067372639975
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "sable_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "sable",
+        "routed_namespaces": [
+          "sable"
+        ],
+        "answer": "The default rollout mode in Sable Deploy is now `canary_safe`. # Sable Release Runbook For regulated release windows, the default rollout mode in Sable Deploy guidance is `serial_guard`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/sable_deploy_v2.md",
+            "chunk_index": 0,
+            "namespace": "sable",
+            "score": 1.2176095147927604
+          },
+          {
+            "source": "versioned_manual_conflicts/sable_release_runbook.md",
+            "chunk_index": 0,
+            "namespace": "sable",
+            "score": 1.1587378283341727
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_updates/sable_deploy_v2.md",
+                "chunk_index": 0,
+                "namespace": "sable",
+                "score": 1.2176095147927604
+              },
+              {
+                "source": "versioned_manual_conflicts/sable_release_runbook.md",
+                "chunk_index": 0,
+                "namespace": "sable",
+                "score": 1.1587378283341727
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "tidal_updated_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "tidal",
+        "routed_namespaces": [
+          "tidal"
+        ],
+        "answer": "# Tidal Recovery Runbook For disaster-recovery restores, the default snapshot mode in Tidal Sync guidance is `full_mirror`. The default snapshot mode in Tidal Sync is now `hourly_delta`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/tidal_recovery_runbook.md",
+            "chunk_index": 0,
+            "namespace": "tidal",
+            "score": 1.228954335053762
+          },
+          {
+            "source": "versioned_manual_updates/tidal_sync_v2.md",
+            "chunk_index": 0,
+            "namespace": "tidal",
+            "score": 1.2233329912026725
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_conflicts/tidal_recovery_runbook.md",
+                "chunk_index": 0,
+                "namespace": "tidal",
+                "score": 1.228954335053762
+              },
+              {
+                "source": "versioned_manual_updates/tidal_sync_v2.md",
+                "chunk_index": 0,
+                "namespace": "tidal",
+                "score": 1.2233329912026725
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "orchid_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "orchid",
+        "routed_namespaces": [
+          "orchid"
+        ],
+        "answer": "The main Orchid CLI config file remains `orchid.yml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/orchid_cli_v2.md",
+            "chunk_index": 0,
+            "namespace": "orchid",
+            "score": 1.132227647304535
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "nova_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "nova",
+        "routed_namespaces": [
+          "nova"
+        ],
+        "answer": "The main manifest file for Nova Build remains `nova.json`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/nova_build_v2.md",
+            "chunk_index": 0,
+            "namespace": "nova",
+            "score": 1.1907113075256348
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "ruma_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "ruma",
+        "routed_namespaces": [
+          "ruma"
+        ],
+        "answer": "The answer mode in RUMA Agent remains `citation-first`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/ruma_agent_v2.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 1.0994714677333832
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_conflicts/ruma_operator_guide.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 0.20912811160087585,
+            "lineage": "versioned_manuals::operator_guide::ruma_agent",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "cinder_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "cinder",
+        "routed_namespaces": [
+          "cinder"
+        ],
+        "answer": "The main Cinder Queue config file remains `cinder.toml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/cinder_queue_v2.md",
+            "chunk_index": 0,
+            "namespace": "cinder",
+            "score": 1.1239800333976746
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "helios_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "helios",
+        "routed_namespaces": [
+          "helios"
+        ],
+        "answer": "The main Helios Packager manifest file remains `helios.yaml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/helios_packager_v2.md",
+            "chunk_index": 0,
+            "namespace": "helios",
+            "score": 1.162928032875061
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "marlin_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "marlin",
+        "routed_namespaces": [
+          "marlin"
+        ],
+        "answer": "The main Marlin Proxy config file remains `proxy.ini`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/marlin_proxy_v2.md",
+            "chunk_index": 0,
+            "namespace": "marlin",
+            "score": 1.1381315469741822
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "quartz_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "quartz",
+        "routed_namespaces": [
+          "quartz"
+        ],
+        "answer": "The main Quartz Scheduler config file remains `quartz.yaml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/quartz_scheduler_v2.md",
+            "chunk_index": 0,
+            "namespace": "quartz",
+            "score": 1.1652358651161194
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "atlas_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "atlas",
+        "routed_namespaces": [
+          "atlas"
+        ],
+        "answer": "The main Atlas Monitor config file remains `atlas.toml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/atlas_monitor_v2.md",
+            "chunk_index": 0,
+            "namespace": "atlas",
+            "score": 1.1234041333198548
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "ember_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "ember",
+        "routed_namespaces": [
+          "ember"
+        ],
+        "answer": "The main Ember Runner config file remains `ember.yml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/ember_runner_v2.md",
+            "chunk_index": 0,
+            "namespace": "ember",
+            "score": 1.1409422636032105
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "lumen_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "lumen",
+        "routed_namespaces": [
+          "lumen"
+        ],
+        "answer": "The main Lumen Cache config file remains `lumen.toml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/lumen_cache_v2.md",
+            "chunk_index": 0,
+            "namespace": "lumen",
+            "score": 1.1426910042762757
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "sable_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "sable",
+        "routed_namespaces": [
+          "sable"
+        ],
+        "answer": "The main Sable Deploy config file remains `sable.yaml`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/sable_deploy_v2.md",
+            "chunk_index": 0,
+            "namespace": "sable",
+            "score": 1.1318607807159424
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "tidal_retained_value",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "tidal",
+        "routed_namespaces": [
+          "tidal"
+        ],
+        "answer": "The main Tidal Sync config file remains `tidal.json`.",
+        "citations": [
+          {
+            "source": "versioned_manual_updates/tidal_sync_v2.md",
+            "chunk_index": 0,
+            "namespace": "tidal",
+            "score": 1.092418897151947
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "name": "ruma_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "ruma",
+        "routed_namespaces": [
+          "ruma"
+        ],
+        "answer": "# RUMA Operator Guide For large retrieval jobs, the default retrieval top_k in RUMA guidance is `6`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/ruma_operator_guide.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 0.9987642500135634
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/ruma_agent_v2.md",
+            "chunk_index": 0,
+            "namespace": "ruma",
+            "score": 0.2588461637496948,
+            "lineage": "ruma::versioned_manuals/ruma_agent_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "marlin_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "marlin",
+        "routed_namespaces": [
+          "marlin"
+        ],
+        "answer": "# Marlin Edge Runbook For high-throughput edge traffic, the default Marlin healthcheck command is `marlin health --edge`. The default healthcheck command is now `marlin health`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/marlin_edge_runbook.md",
+            "chunk_index": 0,
+            "namespace": "marlin",
+            "score": 1.01780424118042
+          },
+          {
+            "source": "versioned_manual_updates/marlin_proxy_v2.md",
+            "chunk_index": 0,
+            "namespace": "marlin",
+            "score": 0.8669891595840454
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_conflicts/marlin_edge_runbook.md",
+                "chunk_index": 0,
+                "namespace": "marlin",
+                "score": 1.01780424118042
+              },
+              {
+                "source": "versioned_manual_updates/marlin_proxy_v2.md",
+                "chunk_index": 0,
+                "namespace": "marlin",
+                "score": 0.8669891595840454
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "quartz_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "quartz",
+        "routed_namespaces": [
+          "quartz"
+        ],
+        "answer": "# Quartz Night Ops Runbook During overnight rebuild windows, the default Quartz scheduling mode is `burst_safe`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/quartz_night_ops.md",
+            "chunk_index": 0,
+            "namespace": "quartz",
+            "score": 1.016633464531465
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/quartz_scheduler_v2.md",
+            "chunk_index": 0,
+            "namespace": "quartz",
+            "score": 0.33845484256744385,
+            "lineage": "quartz::versioned_manuals/quartz_scheduler_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "atlas_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "atlas",
+        "routed_namespaces": [
+          "atlas"
+        ],
+        "answer": "# Atlas Incident Runbook For live incident escalations, the default alert mode in Atlas Monitor guidance is `always_page`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/atlas_incident_runbook.md",
+            "chunk_index": 0,
+            "namespace": "atlas",
+            "score": 1.2170681476593017
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/atlas_monitor_v2.md",
+            "chunk_index": 0,
+            "namespace": "atlas",
+            "score": 0.3288251757621765,
+            "lineage": "atlas::versioned_manuals/atlas_monitor_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      },
+      {
+        "name": "sable_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "sable",
+        "routed_namespaces": [
+          "sable"
+        ],
+        "answer": "# Sable Release Runbook For regulated release windows, the default rollout mode in Sable Deploy guidance is `serial_guard`. # Sable Deploy Manual v2 Sable Deploy is still the rollout controller used in the release pipeline.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/sable_release_runbook.md",
+            "chunk_index": 0,
+            "namespace": "sable",
+            "score": 1.0546113669872283
+          },
+          {
+            "source": "versioned_manual_updates/sable_deploy_v2.md",
+            "chunk_index": 0,
+            "namespace": "sable",
+            "score": 0.8589873015880585
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "multi_source_answer",
+            "message": "The grounded answer uses multiple active sources. Treat this as active disagreement or context-sensitive guidance.",
+            "sources": [
+              {
+                "source": "versioned_manual_conflicts/sable_release_runbook.md",
+                "chunk_index": 0,
+                "namespace": "sable",
+                "score": 1.0546113669872283
+              },
+              {
+                "source": "versioned_manual_updates/sable_deploy_v2.md",
+                "chunk_index": 0,
+                "namespace": "sable",
+                "score": 0.8589873015880585
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "tidal_conflicting_guidance",
+        "passed": true,
+        "namespace_hit": true,
+        "expected_namespace": "tidal",
+        "routed_namespaces": [
+          "tidal"
+        ],
+        "answer": "# Tidal Recovery Runbook For disaster-recovery restores, the default snapshot mode in Tidal Sync guidance is `full_mirror`.",
+        "citations": [
+          {
+            "source": "versioned_manual_conflicts/tidal_recovery_runbook.md",
+            "chunk_index": 0,
+            "namespace": "tidal",
+            "score": 1.1606369733810424
+          }
+        ],
+        "conflicts": [
+          {
+            "type": "conflict_candidate",
+            "source": "versioned_manual_updates/tidal_sync_v2.md",
+            "chunk_index": 0,
+            "namespace": "tidal",
+            "score": 0.3470003008842468,
+            "lineage": "tidal::versioned_manuals/tidal_sync_v1.md",
+            "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+          }
+        ]
+      }
+    ]
+  }
+}

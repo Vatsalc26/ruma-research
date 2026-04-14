@@ -1,0 +1,2 @@
+benchmark,base_known_exact_match,no_update_future_exact_match,superseded_update_exact_match,retention_exact_match,naive_append_exact_match,conflict_exact_match
+versioned_manual_benchmark,1.0,0.0,1.0,1.0,0.08333333333333333,0.8333333333333334

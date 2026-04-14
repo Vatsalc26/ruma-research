@@ -1,0 +1,9 @@
+flowchart TD
+    A[User Query] --> B[Context / Query Encoding]
+    B --> C[Namespace Routing]
+    C --> D[External Memory Records]
+    D --> E[Supersession And Conflict Filtering]
+    E --> F[Citation-First Answer Layer]
+    F --> G[Grounded Answer + Citations]
+    H[Versioned Document Updates] --> I[Append-First Updater]
+    I --> D
