@@ -186,7 +186,7 @@ The architecture should be reasoned about through stable interfaces:
 - `decode(fused_states) -> logits`
 - `update(new_records) -> memory_write_result`
 
-Future agents should preserve this interface-level separation even if the internals change.
+The architecture should preserve this interface-level separation even if the internals change.
 
 ## 6. Current Sandbox Translation
 

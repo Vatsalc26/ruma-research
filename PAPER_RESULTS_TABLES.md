@@ -2,7 +2,7 @@
 
 This file is the paper-facing landing zone for benchmark tables and summary results.
 
-These tables are still working tables, not final publication tables.
+These tables summarize the current published benchmark snapshot for the first RUMA preprint.
 
 ## Table 1: Current Main Results Snapshot
 
@@ -120,7 +120,7 @@ These tables are still working tables, not final publication tables.
 | `conflict_synthesis` | `0.5` | `1.2814ms` | `2.5` | `1.0` |
 | `overall_quality` | `0.9167` | `n/a` | `2.0833` | `0.1667` |
 
-## Remaining Gaps Before Freeze
+## Current Known Limitations
 
 - one conflict-heavy answer-synthesis case still fails on the frozen external corpus
-- public-release cleanup, tagged release prep, and Zenodo/preprint packaging still remain
+- claims remain limited to the current controlled corpora and should not be generalized to standalone frontier-model performance

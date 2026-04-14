@@ -58,11 +58,11 @@ Recommended table set:
 - routing/retrieval snapshot
 - claim boundary / limitations table if desired
 
-## Claude / PDF Guidance
+## Rendering Guidance
 
-If you hand the manuscript to Claude for PDF conversion:
+For PDF conversion or manuscript rendering:
 
-- keep Mermaid source as the input figure source
-- tell Claude to either render Mermaid directly or redraw as simple vector boxes and arrows
-- do not use AI-generated decorative imagery
+- keep Mermaid source as the figure source of truth
+- either render Mermaid directly or redraw the diagrams as simple vector boxes and arrows
+- do not use decorative AI-generated imagery
 - prefer clean technical diagrams and markdown tables
