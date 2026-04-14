@@ -3,6 +3,8 @@
 **Author:** Dr. Vatsal Chavda  
 **Affiliation:** Independent Researcher  
 **ORCID:** https://orcid.org/0009-0005-8789-7301
+**Preprint DOI:** https://doi.org/10.5281/zenodo.19563611  
+**Software DOI:** https://doi.org/10.5281/zenodo.19563634
 
 ## AI Assistance Disclosure
 
@@ -125,7 +127,11 @@ Public code repository:
 
 Software DOI:
 
-- pending Zenodo archival release
+- `10.5281/zenodo.19563634`
+
+Preprint DOI:
+
+- `10.5281/zenodo.19563611`
 
 The two figure sources already prepared in the repo are:
 

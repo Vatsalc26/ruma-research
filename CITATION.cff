@@ -7,9 +7,19 @@ authors:
     given-names: "Vatsal"
     orcid: "https://orcid.org/0009-0005-8789-7301"
     affiliation: "Independent Researcher"
-version: "0.1.0"
+version: "0.1.1"
 license: "Apache-2.0"
 repository-code: "https://github.com/Vatsalc26/ruma-research"
+doi: "10.5281/zenodo.19563634"
+preferred-citation:
+  type: article
+  title: "RUMA: Routed Updatable Memory Architecture for Versioned Document Updates"
+  authors:
+    - family-names: "Chavda"
+      given-names: "Vatsal"
+      orcid: "https://orcid.org/0009-0005-8789-7301"
+      affiliation: "Independent Researcher"
+  doi: "10.5281/zenodo.19563611"
 keywords:
   - "routed memory"
   - "external memory"
