@@ -119,6 +119,14 @@ The first preprint should ship with:
 - benchmark JSON artifacts in `sandbox/results/`
 - a code release tagged to a stable public GitHub snapshot
 
+Public code repository:
+
+- `https://github.com/Vatsalc26/ruma-research`
+
+Software DOI:
+
+- pending Zenodo archival release
+
 The two figure sources already prepared in the repo are:
 
 - `paper_assets/figure_ruma_architecture.mmd`
