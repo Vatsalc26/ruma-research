@@ -4,6 +4,8 @@
 
 <p align="center">
   <a href="https://github.com/Vatsalc26/ruma-research/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/Vatsalc26/ruma-research?display_name=tag&color=2563eb" /></a>
+  <a href="https://doi.org/10.5281/zenodo.19655779"><img alt="Software DOI" src="https://img.shields.io/badge/software%20DOI-10.5281%2Fzenodo.19655779-0f766e" /></a>
+  <a href="https://doi.org/10.5281/zenodo.19652555"><img alt="Preprint DOI" src="https://img.shields.io/badge/preprint%20DOI-10.5281%2Fzenodo.19652555-f59e0b" /></a>
   <a href="./LICENSE"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/license-Apache%202.0-1f2937" /></a>
 </p>
 
@@ -64,6 +66,11 @@ This release is meant to be read as a serious small-model and architecture-famil
 - `paper_assets/`: release-facing CSV and markdown summary assets
 - `versioned_manuals/`, `versioned_manual_updates/`, `versioned_manual_conflicts/`: curated bounded update corpora
 - `external_corpora/python_ecosystem_changes/`: curated external update corpus built from official-source Python ecosystem documents
+
+## Canonical V2 Records
+
+- software DOI: `10.5281/zenodo.19655779`
+- preprint DOI: `10.5281/zenodo.19652555`
 
 ## Historical Note
 

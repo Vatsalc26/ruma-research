@@ -4,6 +4,11 @@
 
 This version does **not** widen the scientific claim of `V2`. It exists to clean the public artifact boundary and separate the public research package from internal release-ops files.
 
+## Canonical DOI Records
+
+- software DOI: `10.5281/zenodo.19655779`
+- preprint DOI: `10.5281/zenodo.19652555`
+
 ## What Changed Relative To v0.2.0
 
 - removed release-ops/support files that did not need to be part of the public software artifact

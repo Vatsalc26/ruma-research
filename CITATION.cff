@@ -8,6 +8,7 @@ authors:
     orcid: "https://orcid.org/0009-0005-8789-7301"
     affiliation: "Independent Researcher"
 version: "0.2.1"
+doi: "10.5281/zenodo.19655779"
 license: "Apache-2.0"
 repository-code: "https://github.com/Vatsalc26/ruma-research"
 keywords:
@@ -25,4 +26,5 @@ preferred-citation:
       given-names: "Vatsal"
       orcid: "https://orcid.org/0009-0005-8789-7301"
       affiliation: "Independent Researcher"
+  doi: "10.5281/zenodo.19652555"
   url: "https://github.com/Vatsalc26/ruma-research/blob/main/PREPRINT_V2.md"

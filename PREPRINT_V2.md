@@ -222,6 +222,14 @@ Public code repository:
 
 - `https://github.com/Vatsalc26/ruma-research`
 
+Software DOI:
+
+- `10.5281/zenodo.19655779`
+
+Preprint DOI:
+
+- `10.5281/zenodo.19652555`
+
 The figure sources used by the manuscript are:
 
 - `paper_assets/figure_ruma_architecture.mmd`
