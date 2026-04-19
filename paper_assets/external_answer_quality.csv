@@ -1,6 +1,0 @@
-condition,exact_match,avg_query_latency_ms,avg_citation_count,avg_conflict_count
-base_compositional,0.0,1.2809,1.8,0.0
-superseded_compositional,1.0,1.1716,2.0,0.0
-naive_append_compositional,0.4,1.0595,2.0,0.8
-conflict_synthesis,0.5,1.2814,2.5,1.0
-overall_quality,0.9166666666666666,,2.0833,0.1667

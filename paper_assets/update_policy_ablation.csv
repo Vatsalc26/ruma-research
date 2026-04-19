@@ -1,5 +1,0 @@
-policy,metric_scope,exact_match,avg_query_latency_ms,update_seconds
-no_update,future_queries,0.0,1.9121,0.0
-superseded_update,future_queries,1.0,2.4839,0.132423
-naive_append,future_queries,0.08333333333333333,2.0401,0.037093
-superseded_update,retention_queries,1.0,2.7196,0.132423

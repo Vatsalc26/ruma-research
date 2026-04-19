@@ -1,0 +1,9 @@
+dataset,system,update_teacher_exact_match,retention_teacher_exact_match,update_generation_exact_match,retention_generation_exact_match,update_generation_token_accuracy,retention_generation_token_accuracy,old_text_suppression
+alice_text_maturity,transformer_final_form_ruma,0.125,0.0,0.25,0.0,0.4323,0.1042,1.0
+alice_text_maturity,mamba_final_form_ruma,0.25,0.0,0.375,0.25,0.5469,0.5208,1.0
+alice_text_maturity,parameter_edit_auxiliary,0.0,0.0,0.0,0.0,0.1458,0.0833,1.0
+alice_text_maturity,no_lineage_ablation,0.25,0.0,0.375,0.0,0.6302,0.1042,1.0
+repo_markdown_text,transformer_final_form_ruma,0.875,0.0,0.875,0.0,0.8884,0.1726,1.0
+repo_markdown_text,mamba_final_form_ruma,0.875,0.8333,0.875,0.8333,0.9955,0.8512,0.5
+repo_markdown_text,parameter_edit_auxiliary,0.0,0.0,0.0,0.0,0.2589,0.0833,1.0
+repo_markdown_text,no_lineage_ablation,0.875,0.0,1.0,0.0,1.0,0.2083,1.0

@@ -1,0 +1,92 @@
+﻿{
+  "rome_dir": "<benchmark_data>\\\rome_dsets",
+  "datasets": {
+    "counterfact": {
+      "ruma_supersession": {
+        "canonical_update_exact_match": 0.9921875,
+        "paraphrase_exact_match": 1.0,
+        "retention_exact_match": 0.99375,
+        "avg_query_latency_ms": 16.0932,
+        "median_query_latency_ms": 15.5397,
+        "record_count": 128,
+        "paraphrase_count": 256,
+        "retention_count": 1280
+      },
+      "naive_append": {
+        "canonical_update_exact_match": 0.0,
+        "paraphrase_exact_match": 0.0,
+        "retention_exact_match": 0.99375,
+        "avg_query_latency_ms": 20.229,
+        "median_query_latency_ms": 19.4169,
+        "record_count": 128,
+        "paraphrase_count": 256,
+        "retention_count": 1280
+      },
+      "latest_doc": {
+        "canonical_update_exact_match": 1.0,
+        "paraphrase_exact_match": 1.0,
+        "retention_exact_match": 0.990625,
+        "avg_query_latency_ms": 20.0869,
+        "median_query_latency_ms": 19.5019,
+        "record_count": 128,
+        "paraphrase_count": 256,
+        "retention_count": 1280
+      },
+      "subject_override": {
+        "canonical_update_exact_match": 1.0,
+        "paraphrase_exact_match": 1.0,
+        "retention_exact_match": 0.0,
+        "avg_query_latency_ms": 0.04,
+        "median_query_latency_ms": 0.0403,
+        "record_count": 128,
+        "paraphrase_count": 256,
+        "retention_count": 1280
+      }
+    },
+    "zsre": {
+      "ruma_supersession": {
+        "canonical_update_exact_match": 0.9609375,
+        "paraphrase_exact_match": 0.9609375,
+        "retention_exact_match": 1.0,
+        "avg_query_latency_ms": 3.5447,
+        "median_query_latency_ms": 3.3968,
+        "record_count": 128,
+        "paraphrase_count": 128,
+        "retention_count": 128
+      },
+      "naive_append": {
+        "canonical_update_exact_match": 0.0078125,
+        "paraphrase_exact_match": 0.0078125,
+        "retention_exact_match": 1.0,
+        "avg_query_latency_ms": 5.7162,
+        "median_query_latency_ms": 5.7818,
+        "record_count": 128,
+        "paraphrase_count": 128,
+        "retention_count": 128
+      },
+      "latest_doc": {
+        "canonical_update_exact_match": 0.9609375,
+        "paraphrase_exact_match": 0.9609375,
+        "retention_exact_match": 1.0,
+        "avg_query_latency_ms": 5.9536,
+        "median_query_latency_ms": 5.6087,
+        "record_count": 128,
+        "paraphrase_count": 128,
+        "retention_count": 128
+      },
+      "subject_override": {
+        "canonical_update_exact_match": 0.6015625,
+        "paraphrase_exact_match": 0.6015625,
+        "retention_exact_match": 0.0,
+        "avg_query_latency_ms": 0.0396,
+        "median_query_latency_ms": 0.0296,
+        "record_count": 128,
+        "paraphrase_count": 128,
+        "retention_count": 128
+      }
+    }
+  },
+  "validation": {}
+}
+
+

@@ -1,6 +1,6 @@
-{
+﻿{
   "corpus_name": "python_ecosystem_changes_curated_v2",
-  "manifest_path": "D:\\Prototypes\\Project_Breaking\\external_corpora\\python_ecosystem_changes\\manifest.json",
+  "manifest_path": "<local_repo>\\external_corpora\\python_ecosystem_changes\\manifest.json",
   "base_corpus_stats": {
     "documents_indexed": 10,
     "chunks_indexed": 10,
@@ -946,3 +946,5 @@
     "avg_conflict_count": 0.1667
   }
 }
+
+

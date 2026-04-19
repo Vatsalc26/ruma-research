@@ -1,0 +1,53 @@
+﻿{
+  "rome_dir": "<benchmark_data>\\\rome_dsets",
+  "seed": 0,
+  "datasets": {
+    "counterfact": {
+      "dataset": "counterfact",
+      "record_count": 128,
+      "base_example_count": 1664,
+      "update_example_count": 384,
+      "label_count": 146,
+      "training": {
+        "base_epochs": 12,
+        "finetune_epochs": 8,
+        "base_loss_start": 4.735456,
+        "base_loss_end": 0.769581,
+        "finetune_loss_start": 9.604139,
+        "finetune_loss_end": 4.536994,
+        "base_train_seconds": 4.004173,
+        "finetune_seconds": 0.468016
+      },
+      "metrics": {
+        "canonical_update_exact_match": 0.15625,
+        "paraphrase_exact_match": 0.125,
+        "retention_exact_match": 0.6453125
+      }
+    },
+    "zsre": {
+      "dataset": "zsre",
+      "record_count": 128,
+      "base_example_count": 384,
+      "update_example_count": 256,
+      "label_count": 289,
+      "training": {
+        "base_epochs": 12,
+        "finetune_epochs": 8,
+        "base_loss_start": 5.641523,
+        "base_loss_end": 2.606875,
+        "finetune_loss_start": 9.603802,
+        "finetune_loss_end": 5.336585,
+        "base_train_seconds": 0.322743,
+        "finetune_seconds": 0.236628
+      },
+      "metrics": {
+        "canonical_update_exact_match": 0.0078125,
+        "paraphrase_exact_match": 0.0078125,
+        "retention_exact_match": 0.0546875
+      }
+    }
+  },
+  "total_runtime_seconds": 5.732469
+}
+
+

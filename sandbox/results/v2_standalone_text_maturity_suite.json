@@ -1,0 +1,1134 @@
+﻿{
+  "alice_text_maturity": {
+    "transformer_final_form_ruma": {
+      "backbone_type": "transformer",
+      "base_training_seconds": 8.894532,
+      "memory_update_seconds": 0.002838,
+      "controller_training_seconds": 172.213719,
+      "memory_conditioned_text_training_seconds": 283.774489,
+      "trainable_parameters": 713922,
+      "post_update": {
+        "update_teacher_forced": {
+          "token_accuracy": 0.6809,
+          "exact_match": 0.125,
+          "object_accuracy": 0.625,
+          "forward_seconds": 1.902616
+        },
+        "retention_teacher_forced": {
+          "token_accuracy": 0.2021,
+          "exact_match": 0.0,
+          "object_accuracy": 0.25,
+          "forward_seconds": 1.03989
+        },
+        "replaced_teacher_forced": {
+          "token_accuracy": 0.2261,
+          "exact_match": 0.0,
+          "object_accuracy": 0.25,
+          "forward_seconds": 2.067555
+        },
+        "update_generation": {
+          "token_accuracy": 0.4323,
+          "exact_match": 0.25,
+          "generation_seconds": 38.919526,
+          "samples": [
+            {
+              "prompt": "ither the well was very ",
+              "target_suffix": "deep, or she fell very s",
+              "generated_suffix": "de fe wend wend wend wen"
+            },
+            {
+              "prompt": "y, for she had plenty of",
+              "target_suffix": " time as she went down t",
+              "generated_suffix": " time as she wenthe wend"
+            },
+            {
+              "prompt": "ok about her and to wond",
+              "target_suffix": "er what was going to hap",
+              "generated_suffix": "er what was going to hap"
+            }
+          ]
+        },
+        "retention_generation": {
+          "token_accuracy": 0.1042,
+          "exact_match": 0.0,
+          "generation_seconds": 20.834435,
+          "samples": [
+            {
+              "prompt": "le went straight on like",
+              "target_suffix": " a tunnel for some way, ",
+              "generated_suffix": " fime fime fime fime fim"
+            },
+            {
+              "prompt": "then dipped suddenly dow",
+              "target_suffix": "n, so suddenly that Alic",
+              "generated_suffix": "oncerincerincerincerince"
+            },
+            {
+              "prompt": "d not a moment to think ",
+              "target_suffix": "about stopping herself b",
+              "generated_suffix": "about nderinkcinkcinkcin"
+            }
+          ]
+        },
+        "replaced_generation": {
+          "token_accuracy": 0.0781,
+          "exact_match": 0.0,
+          "generation_seconds": 43.44841,
+          "samples": [
+            {
+              "prompt": "Alice was beginning to g",
+              "target_suffix": "et very tired of sitting",
+              "generated_suffix": "ik\u201d\u201d\u201d\u201d\u201d\u201d\u201d\u201d\u201d\u201d\u201d\u201d\u201d\u201d\u201d\u201d\u201d\u201d\u201d\u201d\u201d\u201d"
+            },
+            {
+              "prompt": "her sister on the bank, ",
+              "target_suffix": "and of having nothing to",
+              "generated_suffix": "wonderinginginginginging"
+            },
+            {
+              "prompt": " once or twice she had p",
+              "target_suffix": "eeped into the book her ",
+              "generated_suffix": "ingdelinginginginginging"
+            }
+          ]
+        },
+        "retrieval": {
+          "retrieval_recall_at_1": 0.75
+        },
+        "aux": {
+          "avg_ruma_sufficiency": 0.8135,
+          "avg_ruma_conflict": 0.0485,
+          "memory_stats": {
+            "num_shards": 6,
+            "capacity_per_shard": 128,
+            "records_per_shard": [
+              0,
+              0,
+              0,
+              7,
+              1,
+              0
+            ],
+            "total_records": 8,
+            "active_records": 8,
+            "namespace_counts": {
+              "alice_text_maturity": 8
+            },
+            "content_type_counts": {
+              "sequence_chunk": 8
+            },
+            "status_counts": {
+              "active": 8
+            },
+            "payload_bytes": 1450,
+            "active_payload_bytes": 1450
+          },
+          "avg_fusion_expert_usage": {
+            "conservative": 0.0901,
+            "base": 0.074,
+            "bridge": 0.0912,
+            "memory_dominant": 0.7448
+          },
+          "expert_specialization": {
+            "dominant_expert": "memory_dominant",
+            "expert_entropy": 0.8474,
+            "expert_sharpness": 0.3887
+          },
+          "ablation_config": {
+            "use_selectivity": true,
+            "use_sparse_experts": true,
+            "use_lineage_filtering": true
+          }
+        }
+      }
+    },
+    "mamba_final_form_ruma": {
+      "backbone_type": "mamba",
+      "base_training_seconds": 72.56022,
+      "memory_update_seconds": 0.006075,
+      "controller_training_seconds": 274.952447,
+      "memory_conditioned_text_training_seconds": 443.645254,
+      "trainable_parameters": 651458,
+      "post_update": {
+        "update_teacher_forced": {
+          "token_accuracy": 0.8697,
+          "exact_match": 0.25,
+          "object_accuracy": 0.875,
+          "forward_seconds": 2.52485
+        },
+        "retention_teacher_forced": {
+          "token_accuracy": 0.9362,
+          "exact_match": 0.0,
+          "object_accuracy": 1.0,
+          "forward_seconds": 1.506307
+        },
+        "replaced_teacher_forced": {
+          "token_accuracy": 0.625,
+          "exact_match": 0.0,
+          "object_accuracy": 0.5,
+          "forward_seconds": 2.985258
+        },
+        "update_generation": {
+          "token_accuracy": 0.5469,
+          "exact_match": 0.375,
+          "generation_seconds": 59.55682,
+          "samples": [
+            {
+              "prompt": "ither the well was very ",
+              "target_suffix": "deep, or she fell very s",
+              "generated_suffix": "she llvllvd pbof the wer"
+            },
+            {
+              "prompt": "y, for she had plenty of",
+              "target_suffix": " time as she went down t",
+              "generated_suffix": " time as she went down t"
+            },
+            {
+              "prompt": "ok about her and to wond",
+              "target_suffix": "er what was going to hap",
+              "generated_suffix": "e was co she was cor to "
+            }
+          ]
+        },
+        "retention_generation": {
+          "token_accuracy": 0.5208,
+          "exact_match": 0.25,
+          "generation_seconds": 33.281835,
+          "samples": [
+            {
+              "prompt": "le went straight on like",
+              "target_suffix": " a tunnel for some way, ",
+              "generated_suffix": " wn and pickinge out at "
+            },
+            {
+              "prompt": "then dipped suddenly dow",
+              "target_suffix": "n, so suddenly that Alic",
+              "generated_suffix": "n, and picthen and picki"
+            },
+            {
+              "prompt": "d not a moment to think ",
+              "target_suffix": "about stopping herself b",
+              "generated_suffix": "about stopping herself b"
+            }
+          ]
+        },
+        "replaced_generation": {
+          "token_accuracy": 0.0938,
+          "exact_match": 0.0,
+          "generation_seconds": 69.078906,
+          "samples": [
+            {
+              "prompt": "Alice was beginning to g",
+              "target_suffix": "et very tired of sitting",
+              "generated_suffix": "everiedeay a very deep w"
+            },
+            {
+              "prompt": "her sister on the bank, ",
+              "target_suffix": "and of having nothing to",
+              "generated_suffix": "and picture of make she "
+            },
+            {
+              "prompt": " once or twice she had p",
+              "target_suffix": "eeped into the book her ",
+              "generated_suffix": "e wnge venore acruddenly"
+            }
+          ]
+        },
+        "retrieval": {
+          "retrieval_recall_at_1": 0.0
+        },
+        "aux": {
+          "avg_ruma_sufficiency": 0.7844,
+          "avg_ruma_conflict": 0.0312,
+          "memory_stats": {
+            "num_shards": 6,
+            "capacity_per_shard": 128,
+            "records_per_shard": [
+              0,
+              0,
+              0,
+              6,
+              2,
+              0
+            ],
+            "total_records": 8,
+            "active_records": 8,
+            "namespace_counts": {
+              "alice_text_maturity": 8
+            },
+            "content_type_counts": {
+              "sequence_chunk": 8
+            },
+            "status_counts": {
+              "active": 8
+            },
+            "payload_bytes": 1450,
+            "active_payload_bytes": 1450
+          },
+          "avg_fusion_expert_usage": {
+            "conservative": 0.0305,
+            "base": 0.1874,
+            "bridge": 0.0018,
+            "memory_dominant": 0.7803
+          },
+          "expert_specialization": {
+            "dominant_expert": "memory_dominant",
+            "expert_entropy": 0.6252,
+            "expert_sharpness": 0.549
+          },
+          "ablation_config": {
+            "use_selectivity": true,
+            "use_sparse_experts": true,
+            "use_lineage_filtering": true
+          }
+        }
+      }
+    },
+    "parameter_edit_auxiliary": {
+      "backbone_type": "transformer",
+      "base_training_seconds": 13.459734,
+      "edit_training_seconds": 7.851021,
+      "trainable_parameters": 405934,
+      "post_update": {
+        "update_teacher_forced": {
+          "token_accuracy": 0.6383,
+          "exact_match": 0.0,
+          "object_accuracy": 0.625,
+          "forward_seconds": 0.017167
+        },
+        "retention_teacher_forced": {
+          "token_accuracy": 0.2021,
+          "exact_match": 0.0,
+          "object_accuracy": 0.5,
+          "forward_seconds": 0.010982
+        },
+        "replaced_teacher_forced": {
+          "token_accuracy": 0.2793,
+          "exact_match": 0.0,
+          "object_accuracy": 0.25,
+          "forward_seconds": 0.016941
+        },
+        "update_generation": {
+          "token_accuracy": 0.1458,
+          "exact_match": 0.0,
+          "generation_seconds": 1.909006,
+          "samples": [
+            {
+              "prompt": "ither the well was very ",
+              "target_suffix": "deep, or she fell very s",
+              "generated_suffix": "s s s s s s s s s s s s "
+            },
+            {
+              "prompt": "y, for she had plenty of",
+              "target_suffix": " time as she went down t",
+              "generated_suffix": " s s s s s s s s s s s s"
+            },
+            {
+              "prompt": "ok about her and to wond",
+              "target_suffix": "er what was going to hap",
+              "generated_suffix": " was was was was wato wa"
+            }
+          ]
+        },
+        "retention_generation": {
+          "token_accuracy": 0.0833,
+          "exact_match": 0.0,
+          "generation_seconds": 0.779127,
+          "samples": [
+            {
+              "prompt": "le went straight on like",
+              "target_suffix": " a tunnel for some way, ",
+              "generated_suffix": "d toupbar to to to to to"
+            },
+            {
+              "prompt": "then dipped suddenly dow",
+              "target_suffix": "n, so suddenly that Alic",
+              "generated_suffix": "nge se se se se se se se"
+            },
+            {
+              "prompt": "d not a moment to think ",
+              "target_suffix": "about stopping herself b",
+              "generated_suffix": "the the the the the the "
+            }
+          ]
+        },
+        "replaced_generation": {
+          "token_accuracy": 0.1146,
+          "exact_match": 0.0,
+          "generation_seconds": 1.545178,
+          "samples": [
+            {
+              "prompt": "Alice was beginning to g",
+              "target_suffix": "et very tired of sitting",
+              "generated_suffix": " to to to to to to to to"
+            },
+            {
+              "prompt": "her sister on the bank, ",
+              "target_suffix": "and of having nothing to",
+              "generated_suffix": "the the the the the the "
+            },
+            {
+              "prompt": " once or twice she had p",
+              "target_suffix": "eeped into the book her ",
+              "generated_suffix": "bhe to to to to to to to"
+            }
+          ]
+        }
+      }
+    },
+    "no_lineage_ablation": {
+      "backbone_type": "transformer",
+      "base_training_seconds": 13.07345,
+      "memory_update_seconds": 0.004398,
+      "controller_training_seconds": 238.046398,
+      "memory_conditioned_text_training_seconds": 352.651953,
+      "trainable_parameters": 713922,
+      "post_update": {
+        "update_teacher_forced": {
+          "token_accuracy": 0.9388,
+          "exact_match": 0.25,
+          "object_accuracy": 0.875,
+          "forward_seconds": 1.987702
+        },
+        "retention_teacher_forced": {
+          "token_accuracy": 0.4255,
+          "exact_match": 0.0,
+          "object_accuracy": 0.75,
+          "forward_seconds": 1.131199
+        },
+        "replaced_teacher_forced": {
+          "token_accuracy": 0.2793,
+          "exact_match": 0.0,
+          "object_accuracy": 0.375,
+          "forward_seconds": 1.985891
+        },
+        "update_generation": {
+          "token_accuracy": 0.6302,
+          "exact_match": 0.375,
+          "generation_seconds": 40.920955,
+          "samples": [
+            {
+              "prompt": "ither the well was very ",
+              "target_suffix": "deep, or she fell very s",
+              "generated_suffix": "sicthere f sicthere f si"
+            },
+            {
+              "prompt": "y, for she had plenty of",
+              "target_suffix": " time as she went down t",
+              "generated_suffix": " time as shelisenty onor"
+            },
+            {
+              "prompt": "ok about her and to wond",
+              "target_suffix": "er what was going to hap",
+              "generated_suffix": "er what was going to hap"
+            }
+          ]
+        },
+        "retention_generation": {
+          "token_accuracy": 0.1042,
+          "exact_match": 0.0,
+          "generation_seconds": 21.48861,
+          "samples": [
+            {
+              "prompt": "le went straight on like",
+              "target_suffix": " a tunnel for some way, ",
+              "generated_suffix": "d a the wele f the he we"
+            },
+            {
+              "prompt": "then dipped suddenly dow",
+              "target_suffix": "n, so suddenly that Alic",
+              "generated_suffix": "as venllit very shell si"
+            },
+            {
+              "prompt": "d not a moment to think ",
+              "target_suffix": "about stopping herself b",
+              "generated_suffix": "about ing Alylylylylylyl"
+            }
+          ]
+        },
+        "replaced_generation": {
+          "token_accuracy": 0.1094,
+          "exact_match": 0.0,
+          "generation_seconds": 41.337792,
+          "samples": [
+            {
+              "prompt": "Alice was beginning to g",
+              "target_suffix": "et very tired of sitting",
+              "generated_suffix": "tun,tun,tun,tun,tun,tun,"
+            },
+            {
+              "prompt": "her sister on the bank, ",
+              "target_suffix": "and of having nothing to",
+              "generated_suffix": "she looke she looke she "
+            },
+            {
+              "prompt": " once or twice she had p",
+              "target_suffix": "eeped into the book her ",
+              "generated_suffix": " the he he he he welf ve"
+            }
+          ]
+        },
+        "retrieval": {
+          "retrieval_recall_at_1": 0.125
+        },
+        "aux": {
+          "avg_ruma_sufficiency": 0.1961,
+          "avg_ruma_conflict": 1.0,
+          "memory_stats": {
+            "num_shards": 6,
+            "capacity_per_shard": 128,
+            "records_per_shard": [
+              0,
+              0,
+              0,
+              5,
+              0,
+              3
+            ],
+            "total_records": 8,
+            "active_records": 8,
+            "namespace_counts": {
+              "alice_text_maturity": 8
+            },
+            "content_type_counts": {
+              "sequence_chunk": 8
+            },
+            "status_counts": {
+              "active": 8
+            },
+            "payload_bytes": 1450,
+            "active_payload_bytes": 1450
+          },
+          "avg_fusion_expert_usage": {
+            "conservative": 0.7096,
+            "base": 0.2494,
+            "bridge": 0.041,
+            "memory_dominant": 0.0
+          },
+          "expert_specialization": {
+            "dominant_expert": "conservative",
+            "expert_entropy": 0.7207,
+            "expert_sharpness": 0.4801
+          },
+          "ablation_config": {
+            "use_selectivity": true,
+            "use_sparse_experts": true,
+            "use_lineage_filtering": false
+          }
+        }
+      }
+    }
+  },
+  "repo_markdown_text": {
+    "transformer_final_form_ruma": {
+      "backbone_type": "transformer",
+      "base_training_seconds": 10.118677,
+      "memory_update_seconds": 0.002954,
+      "controller_training_seconds": 258.93664,
+      "memory_conditioned_text_training_seconds": 417.945538,
+      "trainable_parameters": 716373,
+      "post_update": {
+        "update_teacher_forced": {
+          "token_accuracy": 0.9932,
+          "exact_match": 0.875,
+          "object_accuracy": 1.0,
+          "forward_seconds": 2.795855
+        },
+        "retention_teacher_forced": {
+          "token_accuracy": 0.6667,
+          "exact_match": 0.0,
+          "object_accuracy": 0.8333,
+          "forward_seconds": 2.381308
+        },
+        "replaced_teacher_forced": {
+          "token_accuracy": 0.4205,
+          "exact_match": 0.0,
+          "object_accuracy": 0.375,
+          "forward_seconds": 2.913356
+        },
+        "update_generation": {
+          "token_accuracy": 0.8884,
+          "exact_match": 0.875,
+          "generation_seconds": 67.193262,
+          "samples": [
+            {
+              "prompt": " - [RUMA_V2_REVERSE_ARCHITEC",
+              "target_suffix": "TURE_BLUEPRINT.md](./RUMA_V2",
+              "generated_suffix": "TURE_BLUEPRINT.md](./RUMA_V2"
+            },
+            {
+              "prompt": "ERSE_ARCHITECTURE_BLUEPRINT.",
+              "target_suffix": "md): reverse-engineered next",
+              "generated_suffix": "md): reverse-engineered next"
+            },
+            {
+              "prompt": "p architecture showing the c",
+              "target_suffix": "hosen backbone, RUMA block, ",
+              "generated_suffix": "hosen backbone, RUMA block, "
+            }
+          ]
+        },
+        "retention_generation": {
+          "token_accuracy": 0.1726,
+          "exact_match": 0.0,
+          "generation_seconds": 56.347355,
+          "samples": [
+            {
+              "prompt": "d): benchmark families, fit,",
+              "target_suffix": " and ordering for the next s",
+              "generated_suffix": " f f f f f f f f f f f f f f"
+            },
+            {
+              "prompt": "us evaluation phase - [RUMA_",
+              "target_suffix": "V2_FORMAL_SPEC.md](./RUMA_V2",
+              "generated_suffix": "V2_V2_V2_V2_V2_V2_V2_V2_V2_V"
+            },
+            {
+              "prompt": "MAL_SPEC.md): first serious ",
+              "target_suffix": "mathematical and interface-l",
+              "generated_suffix": "st st st st st st st st st s"
+            }
+          ]
+        },
+        "replaced_generation": {
+          "token_accuracy": 0.0714,
+          "exact_match": 0.0,
+          "generation_seconds": 73.230739,
+          "samples": [
+            {
+              "prompt": "[DOC README.md] # Project Br",
+              "target_suffix": "eaking / RUMA `RUMA` = `Rout",
+              "generated_suffix": "and ` ` ` ` ` ` ` ` ` ` ` ` "
+            },
+            {
+              "prompt": "pdatable Memory Architecture",
+              "target_suffix": "` **License:** Apache 2.0 **",
+              "generated_suffix": "Nlor st rAreNxt rApeNGer st "
+            },
+            {
+              "prompt": "us:** Experimental research ",
+              "target_suffix": "sandbox **Read first:** [PRO",
+              "generated_suffix": "st ring ft raper st r st r s"
+            }
+          ]
+        },
+        "retrieval": {
+          "retrieval_recall_at_1": 0.25
+        },
+        "aux": {
+          "avg_ruma_sufficiency": 0.7837,
+          "avg_ruma_conflict": 0.3017,
+          "memory_stats": {
+            "num_shards": 6,
+            "capacity_per_shard": 128,
+            "records_per_shard": [
+              3,
+              0,
+              0,
+              4,
+              1,
+              0
+            ],
+            "total_records": 8,
+            "active_records": 8,
+            "namespace_counts": {
+              "repo_markdown_text": 8
+            },
+            "content_type_counts": {
+              "sequence_chunk": 8
+            },
+            "status_counts": {
+              "active": 8
+            },
+            "payload_bytes": 1733,
+            "active_payload_bytes": 1733
+          },
+          "avg_fusion_expert_usage": {
+            "conservative": 0.1739,
+            "base": 0.0667,
+            "bridge": 0.0733,
+            "memory_dominant": 0.686
+          },
+          "expert_specialization": {
+            "dominant_expert": "memory_dominant",
+            "expert_entropy": 0.9349,
+            "expert_sharpness": 0.3256
+          },
+          "ablation_config": {
+            "use_selectivity": true,
+            "use_sparse_experts": true,
+            "use_lineage_filtering": true
+          }
+        }
+      }
+    },
+    "mamba_final_form_ruma": {
+      "backbone_type": "mamba",
+      "base_training_seconds": 69.541311,
+      "memory_update_seconds": 0.013678,
+      "controller_training_seconds": 258.638829,
+      "memory_conditioned_text_training_seconds": 432.362435,
+      "trainable_parameters": 653909,
+      "post_update": {
+        "update_teacher_forced": {
+          "token_accuracy": 0.9909,
+          "exact_match": 0.875,
+          "object_accuracy": 1.0,
+          "forward_seconds": 2.602894
+        },
+        "retention_teacher_forced": {
+          "token_accuracy": 0.9939,
+          "exact_match": 0.8333,
+          "object_accuracy": 1.0,
+          "forward_seconds": 2.092973
+        },
+        "replaced_teacher_forced": {
+          "token_accuracy": 0.9773,
+          "exact_match": 0.125,
+          "object_accuracy": 1.0,
+          "forward_seconds": 2.797664
+        },
+        "update_generation": {
+          "token_accuracy": 0.9955,
+          "exact_match": 0.875,
+          "generation_seconds": 72.764758,
+          "samples": [
+            {
+              "prompt": " - [RUMA_V2_REVERSE_ARCHITEC",
+              "target_suffix": "TURE_BLUEPRINT.md](./RUMA_V2",
+              "generated_suffix": "TURE_BLUEPRINT.md](./RUMA_V2"
+            },
+            {
+              "prompt": "ERSE_ARCHITECTURE_BLUEPRINT.",
+              "target_suffix": "md): reverse-engineered next",
+              "generated_suffix": "md): reverse-engineered next"
+            },
+            {
+              "prompt": "p architecture showing the c",
+              "target_suffix": "hosen backbone, RUMA block, ",
+              "generated_suffix": "hosen backbone, RUMA block, "
+            }
+          ]
+        },
+        "retention_generation": {
+          "token_accuracy": 0.8512,
+          "exact_match": 0.8333,
+          "generation_seconds": 61.080128,
+          "samples": [
+            {
+              "prompt": "d): benchmark families, fit,",
+              "target_suffix": " and ordering for the next s",
+              "generated_suffix": " and ordering for the next s"
+            },
+            {
+              "prompt": "us evaluation phase - [RUMA_",
+              "target_suffix": "V2_FORMAL_SPEC.md](./RUMA_V2",
+              "generated_suffix": "V2_ARCH.md](./PROJEC Project"
+            },
+            {
+              "prompt": "MAL_SPEC.md): first serious ",
+              "target_suffix": "mathematical and interface-l",
+              "generated_suffix": "mathematical and interface-l"
+            }
+          ]
+        },
+        "replaced_generation": {
+          "token_accuracy": 0.7545,
+          "exact_match": 0.5,
+          "generation_seconds": 81.139662,
+          "samples": [
+            {
+              "prompt": "[DOC README.md] # Project Br",
+              "target_suffix": "eaking / RUMA `RUMA` = `Rout",
+              "generated_suffix": "eaking / RUMA `RUMA` = `Rout"
+            },
+            {
+              "prompt": "pdatable Memory Architecture",
+              "target_suffix": "` **License:** Apache 2.0 **",
+              "generated_suffix": "` **License:** Apache 2.0 **"
+            },
+            {
+              "prompt": "us:** Experimental research ",
+              "target_suffix": "sandbox **Read first:** [PRO",
+              "generated_suffix": "sandbox **Read first:** [PRO"
+            }
+          ]
+        },
+        "retrieval": {
+          "retrieval_recall_at_1": 1.0
+        },
+        "aux": {
+          "avg_ruma_sufficiency": 0.716,
+          "avg_ruma_conflict": 0.3488,
+          "memory_stats": {
+            "num_shards": 6,
+            "capacity_per_shard": 128,
+            "records_per_shard": [
+              3,
+              0,
+              0,
+              3,
+              1,
+              1
+            ],
+            "total_records": 8,
+            "active_records": 8,
+            "namespace_counts": {
+              "repo_markdown_text": 8
+            },
+            "content_type_counts": {
+              "sequence_chunk": 8
+            },
+            "status_counts": {
+              "active": 8
+            },
+            "payload_bytes": 1733,
+            "active_payload_bytes": 1733
+          },
+          "avg_fusion_expert_usage": {
+            "conservative": 0.3162,
+            "base": 0.129,
+            "bridge": 0.0002,
+            "memory_dominant": 0.5547
+          },
+          "expert_specialization": {
+            "dominant_expert": "memory_dominant",
+            "expert_entropy": 0.9569,
+            "expert_sharpness": 0.3098
+          },
+          "ablation_config": {
+            "use_selectivity": true,
+            "use_sparse_experts": true,
+            "use_lineage_filtering": true
+          }
+        }
+      }
+    },
+    "parameter_edit_auxiliary": {
+      "backbone_type": "transformer",
+      "base_training_seconds": 12.84115,
+      "edit_training_seconds": 8.865237,
+      "trainable_parameters": 408385,
+      "post_update": {
+        "update_teacher_forced": {
+          "token_accuracy": 0.9159,
+          "exact_match": 0.0,
+          "object_accuracy": 0.875,
+          "forward_seconds": 0.023051
+        },
+        "retention_teacher_forced": {
+          "token_accuracy": 0.3212,
+          "exact_match": 0.0,
+          "object_accuracy": 0.1667,
+          "forward_seconds": 0.01734
+        },
+        "replaced_teacher_forced": {
+          "token_accuracy": 0.275,
+          "exact_match": 0.0,
+          "object_accuracy": 0.25,
+          "forward_seconds": 0.022198
+        },
+        "update_generation": {
+          "token_accuracy": 0.2589,
+          "exact_match": 0.0,
+          "generation_seconds": 1.633447,
+          "samples": [
+            {
+              "prompt": " - [RUMA_V2_REVERSE_ARCHITEC",
+              "target_suffix": "TURE_BLUEPRINT.md](./RUMA_V2",
+              "generated_suffix": "TE_BLUEPRINTEPR.md](./RUMA_V"
+            },
+            {
+              "prompt": "ERSE_ARCHITECTURE_BLUEPRINT.",
+              "target_suffix": "md): reverse-engineered next",
+              "generated_suffix": "md): reverse-engined ned ned"
+            },
+            {
+              "prompt": "p architecture showing the c",
+              "target_suffix": "hosen backbone, RUMA block, ",
+              "generated_suffix": "hosen bosyn RUMA block, bloc"
+            }
+          ]
+        },
+        "retention_generation": {
+          "token_accuracy": 0.0833,
+          "exact_match": 0.0,
+          "generation_seconds": 1.216958,
+          "samples": [
+            {
+              "prompt": "d): benchmark families, fit,",
+              "target_suffix": " and ordering for the next s",
+              "generated_suffix": " csy, sh_sh_syng csyng csyng"
+            },
+            {
+              "prompt": "us evaluation phase - [RUMA_",
+              "target_suffix": "V2_FORMAL_SPEC.md](./RUMA_V2",
+              "generated_suffix": "V2_MA_MA_MA_MA_MA_MA_MA_MA_M"
+            },
+            {
+              "prompt": "MAL_SPEC.md): first serious ",
+              "target_suffix": "mathematical and interface-l",
+              "generated_suffix": "nghenghenghenghenghenghenghe"
+            }
+          ]
+        },
+        "replaced_generation": {
+          "token_accuracy": 0.0536,
+          "exact_match": 0.0,
+          "generation_seconds": 1.657718,
+          "samples": [
+            {
+              "prompt": "[DOC README.md] # Project Br",
+              "target_suffix": "eaking / RUMA `RUMA` = `Rout",
+              "generated_suffix": "chent wint wint wint wint wi"
+            },
+            {
+              "prompt": "pdatable Memory Architecture",
+              "target_suffix": "` **License:** Apache 2.0 **",
+              "generated_suffix": " shchchchchchchchchchchchchc"
+            },
+            {
+              "prompt": "us:** Experimental research ",
+              "target_suffix": "sandbox **Read first:** [PRO",
+              "generated_suffix": "synghe synghe s/RUMA ngh_MAD"
+            }
+          ]
+        }
+      }
+    },
+    "no_lineage_ablation": {
+      "backbone_type": "transformer",
+      "base_training_seconds": 13.195646,
+      "memory_update_seconds": 0.005759,
+      "controller_training_seconds": 188.407229,
+      "memory_conditioned_text_training_seconds": 284.61945,
+      "trainable_parameters": 716373,
+      "post_update": {
+        "update_teacher_forced": {
+          "token_accuracy": 0.9955,
+          "exact_match": 0.875,
+          "object_accuracy": 1.0,
+          "forward_seconds": 1.900148
+        },
+        "retention_teacher_forced": {
+          "token_accuracy": 0.7485,
+          "exact_match": 0.0,
+          "object_accuracy": 1.0,
+          "forward_seconds": 1.453411
+        },
+        "replaced_teacher_forced": {
+          "token_accuracy": 0.4295,
+          "exact_match": 0.0,
+          "object_accuracy": 0.25,
+          "forward_seconds": 1.877404
+        },
+        "update_generation": {
+          "token_accuracy": 1.0,
+          "exact_match": 1.0,
+          "generation_seconds": 45.699039,
+          "samples": [
+            {
+              "prompt": " - [RUMA_V2_REVERSE_ARCHITEC",
+              "target_suffix": "TURE_BLUEPRINT.md](./RUMA_V2",
+              "generated_suffix": "TURE_BLUEPRINT.md](./RUMA_V2"
+            },
+            {
+              "prompt": "ERSE_ARCHITECTURE_BLUEPRINT.",
+              "target_suffix": "md): reverse-engineered next",
+              "generated_suffix": "md): reverse-engineered next"
+            },
+            {
+              "prompt": "p architecture showing the c",
+              "target_suffix": "hosen backbone, RUMA block, ",
+              "generated_suffix": "hosen backbone, RUMA block, "
+            }
+          ]
+        },
+        "retention_generation": {
+          "token_accuracy": 0.2083,
+          "exact_match": 0.0,
+          "generation_seconds": 33.81734,
+          "samples": [
+            {
+              "prompt": "d): benchmark families, fit,",
+              "target_suffix": " and ordering for the next s",
+              "generated_suffix": " fies, fitherchitherchies, f"
+            },
+            {
+              "prompt": "us evaluation phase - [RUMA_",
+              "target_suffix": "V2_FORMAL_SPEC.md](./RUMA_V2",
+              "generated_suffix": "V2_FORMA_SPEC./RUMA_V2)./R_D"
+            },
+            {
+              "prompt": "MAL_SPEC.md): first serious ",
+              "target_suffix": "mathematical and interface-l",
+              "generated_suffix": "matritritritritritritritriti"
+            }
+          ]
+        },
+        "replaced_generation": {
+          "token_accuracy": 0.0759,
+          "exact_match": 0.0,
+          "generation_seconds": 45.091359,
+          "samples": [
+            {
+              "prompt": "[DOC README.md] # Project Br",
+              "target_suffix": "eaking / RUMA `RUMA` = `Rout",
+              "generated_suffix": "iocococococococococococococo"
+            },
+            {
+              "prompt": "pdatable Memory Architecture",
+              "target_suffix": "` **License:** Apache 2.0 **",
+              "generated_suffix": "t ritUMV2_S recrorecrorecror"
+            },
+            {
+              "prompt": "us:** Experimental research ",
+              "target_suffix": "sandbox **Read first:** [PRO",
+              "generated_suffix": "sreapering ing ing ing ing i"
+            }
+          ]
+        },
+        "retrieval": {
+          "retrieval_recall_at_1": 0.25
+        },
+        "aux": {
+          "avg_ruma_sufficiency": 0.2348,
+          "avg_ruma_conflict": 1.0,
+          "memory_stats": {
+            "num_shards": 6,
+            "capacity_per_shard": 128,
+            "records_per_shard": [
+              0,
+              6,
+              2,
+              0,
+              0,
+              0
+            ],
+            "total_records": 8,
+            "active_records": 8,
+            "namespace_counts": {
+              "repo_markdown_text": 8
+            },
+            "content_type_counts": {
+              "sequence_chunk": 8
+            },
+            "status_counts": {
+              "active": 8
+            },
+            "payload_bytes": 1733,
+            "active_payload_bytes": 1733
+          },
+          "avg_fusion_expert_usage": {
+            "conservative": 0.0001,
+            "base": 0.4886,
+            "bridge": 0.5114,
+            "memory_dominant": 0.0
+          },
+          "expert_specialization": {
+            "dominant_expert": "bridge",
+            "expert_entropy": 0.6938,
+            "expert_sharpness": 0.4995
+          },
+          "ablation_config": {
+            "use_selectivity": true,
+            "use_sparse_experts": true,
+            "use_lineage_filtering": false
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "macro": {
+      "mamba_final_form_ruma": {
+        "update_teacher_exact_match": 0.5625,
+        "retention_teacher_exact_match": 0.4167,
+        "update_generation_exact_match": 0.625,
+        "retention_generation_exact_match": 0.5416,
+        "update_generation_token_accuracy": 0.7712,
+        "retention_generation_token_accuracy": 0.686,
+        "old_text_suppression": 0.75,
+        "expert_sharpness": 0.4294
+      },
+      "no_lineage_ablation": {
+        "update_teacher_exact_match": 0.5625,
+        "retention_teacher_exact_match": 0.0,
+        "update_generation_exact_match": 0.6875,
+        "retention_generation_exact_match": 0.0,
+        "update_generation_token_accuracy": 0.8151,
+        "retention_generation_token_accuracy": 0.1562,
+        "old_text_suppression": 1.0,
+        "expert_sharpness": 0.4898
+      },
+      "parameter_edit_auxiliary": {
+        "update_teacher_exact_match": 0.0,
+        "retention_teacher_exact_match": 0.0,
+        "update_generation_exact_match": 0.0,
+        "retention_generation_exact_match": 0.0,
+        "update_generation_token_accuracy": 0.2024,
+        "retention_generation_token_accuracy": 0.0833,
+        "old_text_suppression": 1.0
+      },
+      "transformer_final_form_ruma": {
+        "update_teacher_exact_match": 0.5,
+        "retention_teacher_exact_match": 0.0,
+        "update_generation_exact_match": 0.5625,
+        "retention_generation_exact_match": 0.0,
+        "update_generation_token_accuracy": 0.6603,
+        "retention_generation_token_accuracy": 0.1384,
+        "old_text_suppression": 1.0,
+        "expert_sharpness": 0.3571
+      }
+    },
+    "comparison": {
+      "transformer_minus_mamba_final_form_ruma": {
+        "update_teacher_exact_match": -0.0625,
+        "retention_teacher_exact_match": -0.4167,
+        "update_generation_exact_match": -0.0625,
+        "retention_generation_exact_match": -0.5416,
+        "update_generation_token_accuracy": -0.1109,
+        "retention_generation_token_accuracy": -0.5476,
+        "old_text_suppression": 0.25,
+        "expert_sharpness": -0.0723
+      },
+      "transformer_minus_no_lineage_ablation": {
+        "update_teacher_exact_match": -0.0625,
+        "retention_teacher_exact_match": 0.0,
+        "update_generation_exact_match": -0.125,
+        "retention_generation_exact_match": 0.0,
+        "update_generation_token_accuracy": -0.1547,
+        "retention_generation_token_accuracy": -0.0179,
+        "old_text_suppression": 0.0,
+        "expert_sharpness": -0.1327
+      },
+      "transformer_minus_parameter_edit_auxiliary": {
+        "update_teacher_exact_match": 0.5,
+        "retention_teacher_exact_match": 0.0,
+        "update_generation_exact_match": 0.5625,
+        "retention_generation_exact_match": 0.0,
+        "update_generation_token_accuracy": 0.458,
+        "retention_generation_token_accuracy": 0.0551,
+        "old_text_suppression": 0.0,
+        "expert_sharpness": 0.3571
+      }
+    }
+  },
+  "config": {
+    "runtime": {
+      "torch_num_threads": 2,
+      "torch_num_interop_threads": 1
+    },
+    "training": {
+      "base_steps": 150,
+      "controller_steps": 80,
+      "memory_text_steps": 120,
+      "parameter_edit_steps": 80,
+      "batch_size": 8,
+      "top_k": 4,
+      "prompt_ratio": 0.5
+    }
+  }
+}
+
+

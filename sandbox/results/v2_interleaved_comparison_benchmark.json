@@ -1,0 +1,197 @@
+﻿{
+  "attachment_ruma": {
+    "training_seconds": 1.510332,
+    "pre_update_base_eval": {
+      "retention_eval": {
+        "token_accuracy": 1.0,
+        "exact_match": 1.0,
+        "object_accuracy": 1.0,
+        "forward_seconds": 0.001903
+      },
+      "replaced_old_fact_eval": {
+        "token_accuracy": 1.0,
+        "exact_match": 1.0,
+        "object_accuracy": 1.0,
+        "forward_seconds": 0.000816
+      },
+      "update_eval": {
+        "token_accuracy": 0.5833,
+        "exact_match": 0.0,
+        "object_accuracy": 0.0,
+        "forward_seconds": 0.0007
+      }
+    },
+    "no_update_baseline": {
+      "retention_eval": {
+        "token_accuracy": 1.0,
+        "exact_match": 1.0,
+        "object_accuracy": 1.0,
+        "forward_seconds": 0.000561
+      },
+      "replaced_old_fact_eval": {
+        "token_accuracy": 1.0,
+        "exact_match": 1.0,
+        "object_accuracy": 1.0,
+        "forward_seconds": 0.000412
+      },
+      "update_eval": {
+        "token_accuracy": 0.5833,
+        "exact_match": 0.0,
+        "object_accuracy": 0.0,
+        "forward_seconds": 0.000397
+      },
+      "update_seconds": 0.0
+    },
+    "memory_update_path": {
+      "retention_eval": {
+        "token_accuracy": 0.8333,
+        "exact_match": 0.5,
+        "object_accuracy": 0.5,
+        "forward_seconds": 0.007343
+      },
+      "replaced_old_fact_eval": {
+        "token_accuracy": 0.75,
+        "exact_match": 0.25,
+        "object_accuracy": 0.25,
+        "forward_seconds": 0.005445
+      },
+      "update_eval": {
+        "token_accuracy": 1.0,
+        "exact_match": 1.0,
+        "object_accuracy": 1.0,
+        "forward_seconds": 0.00608
+      },
+      "retrieval": {
+        "retrieval_recall_at_1": 1.0
+      },
+      "update_seconds": 0.001436,
+      "memory_stats": {
+        "num_shards": 6,
+        "capacity_per_shard": 128,
+        "records_per_shard": [
+          2,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "total_records": 4,
+        "active_records": 4,
+        "namespace_counts": {
+          "toy_facts": 4
+        },
+        "content_type_counts": {
+          "sequence_chunk": 4
+        },
+        "status_counts": {
+          "active": 4
+        },
+        "payload_bytes": 56,
+        "active_payload_bytes": 56
+      }
+    }
+  },
+  "interleaved_ruma": {
+    "training_seconds": 10.803418,
+    "pre_update_base_eval": {
+      "retention_eval": {
+        "token_accuracy": 1.0,
+        "exact_match": 1.0,
+        "object_accuracy": 1.0,
+        "forward_seconds": 0.006635
+      },
+      "replaced_old_fact_eval": {
+        "token_accuracy": 1.0,
+        "exact_match": 1.0,
+        "object_accuracy": 1.0,
+        "forward_seconds": 0.005182
+      },
+      "update_eval": {
+        "token_accuracy": 0.5,
+        "exact_match": 0.0,
+        "object_accuracy": 0.0,
+        "forward_seconds": 0.007234
+      }
+    },
+    "no_update_baseline": {
+      "retention_eval": {
+        "token_accuracy": 1.0,
+        "exact_match": 1.0,
+        "object_accuracy": 1.0,
+        "forward_seconds": 0.007297
+      },
+      "replaced_old_fact_eval": {
+        "token_accuracy": 1.0,
+        "exact_match": 1.0,
+        "object_accuracy": 1.0,
+        "forward_seconds": 0.006516
+      },
+      "update_eval": {
+        "token_accuracy": 0.5,
+        "exact_match": 0.0,
+        "object_accuracy": 0.0,
+        "forward_seconds": 0.006638
+      },
+      "update_seconds": 0.0
+    },
+    "memory_update_path": {
+      "retention_eval": {
+        "token_accuracy": 1.0,
+        "exact_match": 1.0,
+        "object_accuracy": 1.0,
+        "forward_seconds": 0.062325
+      },
+      "replaced_old_fact_eval": {
+        "token_accuracy": 0.3333,
+        "exact_match": 0.0,
+        "object_accuracy": 0.0,
+        "forward_seconds": 0.065013
+      },
+      "update_eval": {
+        "token_accuracy": 1.0,
+        "exact_match": 1.0,
+        "object_accuracy": 1.0,
+        "forward_seconds": 0.062528
+      },
+      "retrieval": {
+        "retrieval_recall_at_1": 1.0
+      },
+      "update_seconds": 0.001634,
+      "memory_stats": {
+        "num_shards": 6,
+        "capacity_per_shard": 128,
+        "records_per_shard": [
+          1,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_records": 4,
+        "active_records": 4,
+        "namespace_counts": {
+          "toy_facts": 4
+        },
+        "content_type_counts": {
+          "sequence_chunk": 4
+        },
+        "status_counts": {
+          "active": 4
+        },
+        "payload_bytes": 56,
+        "active_payload_bytes": 56
+      }
+    }
+  },
+  "comparison": {
+    "memory_update_exact_match_gap": 0.0,
+    "memory_update_object_accuracy_gap": 0.0,
+    "retention_exact_match_gap": 0.5,
+    "retrieval_recall_gap": 0.0,
+    "memory_update_seconds_gap": 0.000198
+  }
+}
+
+

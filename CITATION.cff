@@ -1,28 +1,28 @@
 cff-version: 1.2.0
-title: "RUMA: Routed Updatable Memory Architecture for Versioned Document Updates"
-message: "If you use this repository, please cite the software release and the accompanying preprint."
+title: "RUMA V2: Interleaved Routed Updatable Memory Architecture"
+message: "If you use this repository, please cite the software release and the accompanying V2 manuscript."
 type: software
 authors:
   - family-names: "Chavda"
     given-names: "Vatsal"
     orcid: "https://orcid.org/0009-0005-8789-7301"
     affiliation: "Independent Researcher"
-version: "0.1.1"
+version: "0.2.0"
 license: "Apache-2.0"
 repository-code: "https://github.com/Vatsalc26/ruma-research"
-doi: "10.5281/zenodo.19563634"
+keywords:
+  - "routed memory"
+  - "updatable memory"
+  - "interleaved memory architecture"
+  - "knowledge updates"
+  - "grounded evidence control"
+  - "stale-memory suppression"
 preferred-citation:
-  type: article
-  title: "RUMA: Routed Updatable Memory Architecture for Versioned Document Updates"
+  type: report
+  title: "RUMA V2: Interleaved Routed Updatable Memory for Explicit Updates, Retained Guidance, and Grounded Evidence Control"
   authors:
     - family-names: "Chavda"
       given-names: "Vatsal"
       orcid: "https://orcid.org/0009-0005-8789-7301"
       affiliation: "Independent Researcher"
-  doi: "10.5281/zenodo.19563611"
-keywords:
-  - "routed memory"
-  - "external memory"
-  - "versioned document updates"
-  - "grounded answering"
-  - "supersession"
+  url: "https://github.com/Vatsalc26/ruma-research/blob/main/PREPRINT_V2.md"

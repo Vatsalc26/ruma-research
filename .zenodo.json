@@ -1,6 +1,6 @@
 {
-  "title": "RUMA: Routed Updatable Memory Architecture for Versioned Document Updates",
-  "version": "v0.1.2",
+  "title": "RUMA V2: Interleaved Routed Updatable Memory Architecture",
+  "version": "v0.2.0",
   "upload_type": "software",
   "access_right": "open",
   "license": "Apache-2.0",
@@ -15,11 +15,12 @@
   ],
   "keywords": [
     "routed memory",
-    "external memory",
-    "versioned document updates",
-    "retrieval",
+    "updatable memory",
+    "interleaved architecture",
+    "versioned updates",
     "knowledge updates",
-    "grounded answering",
+    "grounded evidence control",
+    "stale-memory suppression",
     "supersession"
   ],
   "related_identifiers": [

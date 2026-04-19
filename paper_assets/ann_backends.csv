@@ -1,7 +1,0 @@
-noise_chunks,requested_backend,active_backend,fallback_reason,global_exact_match,global_avg_query_latency_ms,routed_exact_match,routed_avg_query_latency_ms
-0,exact,exact,,1.0,2.9791,1.0,1.0642
-0,faiss_flat,faiss_flat,,1.0,1.0916,1.0,0.6098
-0,hnsw,hnsw,,1.0,1.7612,1.0,1.3697
-1000,exact,exact,,1.0,2.3647,1.0,1.2405
-1000,faiss_flat,faiss_flat,,1.0,1.8102,1.0,2.5625
-1000,hnsw,hnsw,,1.0,3.4039,1.0,4.1585

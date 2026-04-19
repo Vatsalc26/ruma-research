@@ -1,0 +1,61 @@
+﻿{
+  "local_model_available": true,
+  "model_status": {
+    "binary_exists": true,
+    "model_exists": true,
+    "binary_path": "<local_repo>\\llama\\llama-cli.exe",
+    "model_path": "<local_model>\\\qwen2.5-0.5b-instruct-q4_k_m.gguf"
+  },
+  "cases": [
+    {
+      "name": "fastapi_python_ceiling",
+      "query": "After FastAPI added Python 3.14 support, what became the newest explicitly supported Python line?",
+      "citation_first_answer": "FastAPI 0.119.0 added support for Python 3.14, while Python 3.13 still remained supported in the same later release-note stream. FastAPI higher-end Python support after the next upgrade.",
+      "citations": [
+        {
+          "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_python_ceiling_update.md",
+          "chunk_index": 0,
+          "namespace": "external_python_docs_fastapi_python_ceiling",
+          "score": 1.042595793803533
+        },
+        {
+          "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_python_ceiling_update.md",
+          "chunk_index": 0,
+          "namespace": "external_python_docs_fastapi_python_ceiling",
+          "score": 0.7925957938035328
+        }
+      ],
+      "conflicts": [],
+      "raw_local_model_answer": "FastAPI 0.119.0 became the newest explicitly supported Python line.",
+      "local_model_answer": "Python 3.14 became the newest explicitly supported Python line."
+    },
+    {
+      "name": "fastapi_pydantic_migration",
+      "query": "What changed for direct Pydantic v1 support in later FastAPI releases?",
+      "citation_first_answer": "FastAPI later dropped support for Pydantic v1, first keeping only short temporary support for Pydantic v2's pydantic.v1 and then dropping pydantic.v1 support outright.",
+      "citations": [
+        {
+          "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/updates/fastapi_pydantic_migration_update.md",
+          "chunk_index": 0,
+          "namespace": "external_python_docs_fastapi_pydantic_migration",
+          "score": 1.0192436277866364
+        }
+      ],
+      "conflicts": [
+        {
+          "type": "conflict_candidate",
+          "source": "D:/Prototypes/Project_Breaking/external_corpora/python_ecosystem_changes/conflicts/fastapi_pydantic_partial_support_conflict.md",
+          "chunk_index": 0,
+          "namespace": "external_python_docs_fastapi_pydantic_migration",
+          "score": 0.3072807788848877,
+          "lineage": "external_python_docs::fastapi_pydantic_partial_support_note",
+          "message": "Another active source with overlapping evidence was retrieved. This answer may need manual comparison across citations."
+        }
+      ],
+      "raw_local_model_answer": "FastAPI later dropped support for Pydantic v1, first keeping only short temporary support for Pydantic v2's pydantic.v1 and then dropping pydantic.v1 support outright.",
+      "local_model_answer": "FastAPI later dropped support for Pydantic v1, first keeping only short temporary support for Pydantic v2's pydantic.v1 and then dropping pydantic.v1 support outright."
+    }
+  ]
+}
+
+

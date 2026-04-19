@@ -1,0 +1,6 @@
+comparison,update_exact_match,retention_exact_match,old_fact_suppression,second_update_exact_match,prior_update_suppression_after_second,expert_sharpness
+transformer_minus_mamba_final_form_ruma,0.0,0.0,0.0,0.0,0.0,0.0012
+transformer_minus_no_lineage_ablation,0.0,0.0,0.4167,0.0,0.0,0.1022
+transformer_minus_no_selectivity_ablation,0.0,0.0,0.0,0.0,0.0,0.1588
+transformer_minus_no_sparse_expert_ablation,0.0,0.0,0.0,0.0,0.0,-0.2967
+transformer_minus_parameter_edit_auxiliary,0.1667,0.8333,0.0,0.6667,0.6667,0.7033

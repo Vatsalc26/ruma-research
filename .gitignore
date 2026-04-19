@@ -1,4 +1,16 @@
 __pycache__/
 *.pyc
 *.pyo
+alice.txt
 .DS_Store
+public_release_staging/
+benchmark_data/
+LLama/
+Qwen2.5-0.5B-Instruct-GGUF/
+portfolio_pages_staging/
+.venv_phase3_cuda/
+.venv_phase3_gpu/
+sandbox/results/v3_phase3_gpu_*.log
+sandbox/results/v3_phase3_gpu_scaleup_suite.json
+Attentionis all you need architecture/tensor2tensor-master/
+Mamba/mamba-main/

@@ -1,4 +1,4 @@
-{
+﻿{
   "backend_availability": [
     {
       "name": "exact",
@@ -242,3 +242,5 @@
   ],
   "note": "If FAISS or HNSW are unavailable locally, the benchmark records the requested backend and the exact-search fallback. This keeps the adapter path wired without blocking the current evidence loop on environment setup."
 }
+
+

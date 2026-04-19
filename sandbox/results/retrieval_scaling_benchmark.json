@@ -1,4 +1,4 @@
-{
+﻿{
   "case_count": 30,
   "scale_points": [
     {
@@ -72,3 +72,5 @@
   ],
   "note": "This benchmark measures when unrestricted exact search starts to become meaningfully more expensive than simple namespace-routed exact search as irrelevant document noise grows."
 }
+
+
