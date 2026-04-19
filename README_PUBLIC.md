@@ -64,6 +64,18 @@ This release is meant to be read as a serious small-model and architecture-famil
 
 The earlier narrow systems package remains available as the `V1` release path and manuscript in [PREPRINT_V1.md](./PREPRINT_V1.md). `V2` supersedes that package as the main architecture-family release.
 
+Historical `V1` archival records:
+
+- software DOI: `10.5281/zenodo.19563634`
+- preprint DOI: `10.5281/zenodo.19563611`
+
+<p>
+  <a href="https://doi.org/10.5281/zenodo.19563634"><img alt="V1 software DOI" src="https://img.shields.io/badge/V1%20software%20DOI-10.5281%2Fzenodo.19563634-0f766e" /></a>
+  <a href="https://doi.org/10.5281/zenodo.19563611"><img alt="V1 preprint DOI" src="https://img.shields.io/badge/V1%20preprint%20DOI-10.5281%2Fzenodo.19563611-f59e0b" /></a>
+</p>
+
+These `V1` records are retained for archival continuity. They should not be interpreted as the DOI records for the current `V2` release.
+
 ## Citation
 
 Use [CITATION.cff](./CITATION.cff) and the release metadata for the public release you are actually citing. The earlier `V1` DOI-backed release remains a historical artifact and should not be mistaken for the `V2` package.

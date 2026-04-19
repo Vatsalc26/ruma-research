@@ -1,16 +1,29 @@
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
+
+# Local scratch corpus files
 alice.txt
+
+# OS metadata
 .DS_Store
+
+# Local staging folders
 public_release_staging/
+portfolio_pages_staging/
+
+# Local datasets and model downloads kept out of the public repo
 benchmark_data/
 LLama/
 Qwen2.5-0.5B-Instruct-GGUF/
-portfolio_pages_staging/
+
+# Local Phase 3 environments and long-run artifacts
 .venv_phase3_cuda/
 .venv_phase3_gpu/
 sandbox/results/v3_phase3_gpu_*.log
 sandbox/results/v3_phase3_gpu_scaleup_suite.json
+
+# Local reference implementations used for comparison only
 Attentionis all you need architecture/tensor2tensor-master/
 Mamba/mamba-main/
