@@ -227,11 +227,7 @@ The figure sources used by the manuscript are:
 - `paper_assets/figure_ruma_architecture.mmd`
 - `paper_assets/figure_benchmark_flow.mmd`
 
-The practical release gate and package boundaries are defined in:
-
-- [RUMA_V2_RELEASE_GATE.md](./RUMA_V2_RELEASE_GATE.md)
-- [PUBLIC_RELEASE_CONTENTS.md](./PUBLIC_RELEASE_CONTENTS.md)
-- [README_PUBLIC.md](./README_PUBLIC.md)
+The public repository README and release notes define the release-facing package boundaries for the software artifact associated with this manuscript.
 
 ## 9. Conclusion
 

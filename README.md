@@ -52,7 +52,7 @@ This release is meant to be read as a serious small-model and architecture-famil
 ## Read First
 
 - [PREPRINT_V2.md](./PREPRINT_V2.md)
-- [RELEASE_NOTES_v0.2.0.md](./RELEASE_NOTES_v0.2.0.md)
+- [RELEASE_NOTES_v0.2.1.md](./RELEASE_NOTES_v0.2.1.md)
 - [sandbox/README.md](./sandbox/README.md)
 - [paper_assets/v2_benchmark_package_snapshot.md](./paper_assets/v2_benchmark_package_snapshot.md)
 - [RUMA_V2_FORMAL_SPEC.md](./RUMA_V2_FORMAL_SPEC.md)
